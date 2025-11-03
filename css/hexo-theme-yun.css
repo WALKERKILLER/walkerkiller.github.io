@@ -1200,7 +1200,7 @@ body::before {
   left: 0;
   top: 0;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
   animation: triFadeIn 2s;
 }
 @-moz-keyframes triFadeIn {
@@ -1209,7 +1209,7 @@ body::before {
     filter: grayscale(1);
   }
   to {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 @-webkit-keyframes triFadeIn {
@@ -1218,7 +1218,7 @@ body::before {
     filter: grayscale(1);
   }
   to {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 @-o-keyframes triFadeIn {
@@ -1227,7 +1227,7 @@ body::before {
     filter: grayscale(1);
   }
   to {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 @keyframes triFadeIn {
@@ -1236,7 +1236,7 @@ body::before {
     filter: grayscale(1);
   }
   to {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 .spinner {
