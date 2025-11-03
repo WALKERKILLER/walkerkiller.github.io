@@ -1,0 +1,150 @@
+banner:
+  enable: true
+  title:
+    - WalkerKiller's
+    - E
+    - D
+    - E
+    - N
+    - Blog&Diary
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  dark: https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/bg.jpg
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.8
+  
+  search:
+  modal: true
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/bg.jpg
+  # placeholder:
+
+trianglify:
+  enable: true
+  cellSize: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+fireworks:
+  enable: true
+  colors:
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
+
+medium_zoom: true
+
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .markdown-body img
+	
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
+
+avatar:
+  enable: true
+  url: https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg # 你的头像图片地址
+  rounded: true
+  opacity: 1
+  status:
+    enable: true
+    emoji: 😭
+    message: 不想上学
+
+menu:
+  home:
+    path: /
+    icon: ri:home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: ri:archive-line
+    - type: categories
+      path: /categories/
+      icon: ri:folder-2-line
+    - type: tags
+      path: /tags/
+      icon: ri:price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: ri:cloud-line
+    #   count: 你猜
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: ri:settings-line
+
+social:
+  - name: GitHub
+    link: https://github.com/WALKERKILLER
+    icon: ri:github-line
+    color: '#FF8EB3'
+  - name: E-Mail
+    link: walkerkiller1202@gmail.com
+    icon: ri:mail-line
+    color: '#8E71C1'
+  - name: 网易云音乐
+    link: https://music.163.com/#/artist?id=34348329
+    icon: ri:netease-cloud-music-line
+    color: '#C10D0C'
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/493316804
+    icon: ri:bilibili-line
+    color: '#FF8EB3'
+	
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+
+wordcloud:
+   enable: true
+  
+katex:
+  copy_tex: true
+  global: false
+  options: {}
+ 
+wordcount:
+  enable: true
+  count: true
+  time: true
+  
+reward:
+  enable: false
+  icon: ri:hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
+      color: '#00A3EE'
+      icon: ri:alipay-line
+      # link: https://xxxx
+    - name: QQ 支付
+      path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
+      color: '#12B7F5'
+      icon: ri:qq-line
+    - name: 微信支付
+      path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
+      color: '#2DC100'
+      icon: ri:wechat-pay-line
