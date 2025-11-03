@@ -1,12 +1,14 @@
 banner:
   enable: true
   title:
-    - WalkerKiller's
-    - E
-    - D
-    - E
-    - N
-    - Blog&Diary
+    - 新
+    - 月
+    - 潮
+    - 汐
+    - 摄
+    - 动
+    - 流
+    - 行
   border: true
   cloud:
     enable: true
