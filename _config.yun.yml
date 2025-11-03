@@ -8,7 +8,7 @@ banner:
     - 摄
     - 动
     - 流
-    - 行
+    - 形
   border: true
   cloud:
     enable: true
@@ -36,7 +36,7 @@ trianglify:
   width: 800
   height: 600
   palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
-  opacity: 0.5
+  opacity: 0.4
 
 fireworks:
   enable: true
