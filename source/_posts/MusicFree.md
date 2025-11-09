@@ -38,12 +38,11 @@ categories:
 
 ![image.png](https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20251109174108473.png)
 
-总而言之，你安装的插件是一个在本地或者云上的json文件，里面包含了实现规则的一系列元数据，这里提供一个来自于[xxnuo/MusicFreePluginsHub: MusicFree 源插件订阅聚合器 - 订阅全网大全](https://github.com/xxnuo/MusicFreePluginsHub)仓库的懒人订阅源：https://musicfreepluginshub.2020818.xyz/plugins.json，直接复制到软件输入【从网络安装插件即可】，由于涉及到后续插件获取更新和个人插件开发，你也可以Fork本仓库并启用Github Actions，配置自己的订阅链接。
+总而言之，你安装的插件是一个在本地或者云上的json文件，里面包含了实现规则的一系列元数据，这里提供一个来自于[xxnuo/MusicFreePluginsHub: MusicFree 源插件订阅聚合器 - 订阅全网大全](https://github.com/xxnuo/MusicFreePluginsHub)仓库的懒人订阅源：https://musicfreepluginshub.2020818.xyz/plugins.json ，直接复制到软件输入【从网络安装插件即可】，由于涉及到后续插件获取更新和个人插件开发，你也可以Fork本仓库并启用Github Actions，配置自己的订阅链接。
 ## 个人插件开发
 此处开发者给出了教程，直接引用：[MusicFree插件原理](https://mp.weixin.qq.com/s/pjyOjTDrV85ImRQ6EWbgAg)
 插件本质上是一个 **导出特定数据结构** 的 `Common JS 模块`。理论上通过一定的调用，你可以把某b等视频平台作为音源。
 
 ## 声明
 > 本软件不涉及任何与”破解VIP”有关的行为，插件的解释权归插件开发者所有。
-
 
