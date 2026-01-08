@@ -64,7 +64,7 @@ categories:
     *   **性质：** $\Phi(-a) = 1 - \Phi(a)$, $\Phi(0) = \frac{1}{2}$, $P(|X| \le a) = 2\Phi(a) - 1$
     *   >**if $f(x) = Ae^{ax+bx+c}$ $(x \in (a, b) (or) x \in (-\infty, +\infty))$ 则为正态**
 
-### **随机变量函数的分布：**
+### **随机变量函数的分布**
 
 *   **命题：** $F_Y(y) = P(Y \le y) = P(g(X) \le y) = \int_{g(x)\le y} f_X(x)dx$
 *   **定理：** $X$ 的密度函数 $f_X(x)$ 在 $(a, b)$ 之间严格单调，则 $Y=f(X)$ 服从 $(a, b)$ 上的分布：
@@ -72,7 +72,7 @@ categories:
     *   $ = P|X \le F^{-1}(y)| = F(F^{-1}(y)) = y$ **(均匀分布)**
     *   一般地：$f_Y(y) = f_X[h(y)] \cdot |h'(y)|$ （其中 $x=h(y)$ 是反函数）
 
-### **多维随机变量及分布：**
+### **多维随机变量及分布**
 
 $$F(x, y) = P(X \le x, Y \le y)$$
 
@@ -238,7 +238,7 @@ $X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的样本，$EX = \mu, VarX = \sigma
 
 3) $ES^2 = \sigma^2$ ，$Var S^2=\frac{2\sigma^{4}}{n-1}$
 
-### **三大抽样分布：**
+### **三大抽样分布**
 
 1.  **$\chi^2$ 分布：** $def$: $X_1 \dots X_n$ 相互独立 $N(0, 1)$，相互独立。则 $\chi^2 = X_1^2 + \dots + X_n^2$
     *   $\chi^2 \sim \chi^2(n)$
