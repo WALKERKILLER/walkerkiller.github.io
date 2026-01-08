@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="WALKERKILLER"><meta name="copyright" content="WALKERKILLER"><meta name="generator" content="Hexo 7.3.0"><meta name="theme" content="hexo-theme-yun"><title>概率论与数理统计知识点 | WALKERKILLER'S EDEN</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...true?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"walkerkiller.github.io","root":"/","title":["新","月","潮","汐","摄","动","流","形"],"version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="随机变量及其分布随机变量及其分布分布函数： $def: F(x) &#x3D; P(X \le x)$  性质： 非负性、单调性、规范性、连续性（右连续）  离散分布 二项分布： $X \sim B(n, p)$ $P(X&#x3D;k) &#x3D; C_n^k p^k (1-p)^{n-k} \quad (k&#x3D;0, 1, \dots, n)$ $EX &#x3D; np$, $Var">
+<meta property="og:type" content="article">
+<meta property="og:title" content="概率论与数理统计知识点">
+<meta property="og:url" content="https://walkerkiller.github.io/2026/01/09/Probability-Statistics-Notes/index.html">
+<meta property="og:site_name" content="WALKERKILLER&#39;S EDEN">
+<meta property="og:description" content="随机变量及其分布随机变量及其分布分布函数： $def: F(x) &#x3D; P(X \le x)$  性质： 非负性、单调性、规范性、连续性（右连续）  离散分布 二项分布： $X \sim B(n, p)$ $P(X&#x3D;k) &#x3D; C_n^k p^k (1-p)^{n-k} \quad (k&#x3D;0, 1, \dots, n)$ $EX &#x3D; np$, $Var">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260109025302521.png">
+<meta property="article:published_time" content="2026-01-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-01-08T16:00:00.000Z">
+<meta property="article:author" content="WALKERKILLER">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="概率论与数理统计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260109025302521.png"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://fastly.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="WALKERKILLER"><img width="96" loading="lazy" src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg" alt="WALKERKILLER"><span class="site-author-status" title="不想上学">😭</span></a><div class="site-author-name"><a href="/about/">WALKERKILLER</a></div><span class="site-name">WALKERKILLER'S EDEN</span><sub class="site-subtitle">快逃，别回头，这里不是伊甸</sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">6</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/WALKERKILLER" title="GitHub" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="walkerkiller1202@gmail.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/artist?id=34348329" title="网易云音乐" target="_blank" style="color:#C10D0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/493316804" title="哔哩哔哩动画" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83"><span class="toc-number">1.</span> <span class="toc-text">随机变量及其分布</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83-1"><span class="toc-number">1.1.</span> <span class="toc-text">随机变量及其分布</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E5%88%86%E5%B8%83"><span class="toc-number">1.2.</span> <span class="toc-text">离散分布</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E5%88%86%E5%B8%83"><span class="toc-number">1.3.</span> <span class="toc-text">连续分布</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">随机变量函数的分布：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">1.5.</span> <span class="toc-text">多维随机变量及分布：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E8%BF%9E%E7%BB%AD"><span class="toc-number">1.5.1.</span> <span class="toc-text">二维连续</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%B9%E7%BC%98%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6"><span class="toc-number">1.5.2.</span> <span class="toc-text">边缘概率密度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6"><span class="toc-number">1.5.3.</span> <span class="toc-text">条件概率密度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E6%80%A7%EF%BC%9A-f-x-y-f-X-x-cdot-f-Y-y"><span class="toc-number">1.5.4.</span> <span class="toc-text">独立性： $f(x, y) &#x3D; f_X(x) \cdot f_Y(y)$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E5%9D%87%E5%8C%80%E5%88%86%E5%B8%83%EF%BC%9A-A-S-D-f-x-y-begin-cases-frac-1-S-D-x-y-in-D-0-text-%E4%BD%99-end-cases"><span class="toc-number">1.5.5.</span> <span class="toc-text">二维均匀分布： $A &#x3D; S_D$, $f(x, y) &#x3D; \begin{cases} \frac{1}{S_D} &amp; (x, y) \in D \ 0 &amp; \text{余} \end{cases}$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E3%80%81%E6%9E%81%E5%80%BC%E3%80%81%E5%8F%AF%E5%8A%A0%E6%80%A7%E4%B8%8E%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81"><span class="toc-number">1.5.6.</span> <span class="toc-text">二维正态、极值、可加性与数字特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">1.5.7.</span> <span class="toc-text">二维随机变量函数分布：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9C%80%E5%B0%8F%E5%80%BC%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">1.5.8.</span> <span class="toc-text">最大值最小值分布：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E6%9C%89%E5%8F%AF%E5%8A%A0%E6%80%A7%E7%9A%84%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">1.5.9.</span> <span class="toc-text">具有可加性的分布：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81"><span class="toc-number">2.</span> <span class="toc-text">数字特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E6%96%B9%E5%B7%AE%E3%80%81%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E3%80%81%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">协方差、相关系数、大数定律</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8F%E6%96%B9%E5%B7%AE"><span class="toc-number">3.1.</span> <span class="toc-text">协方差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="toc-number">3.2.</span> <span class="toc-text">相关系数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E5%92%8C%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">大数定律和中心极限定理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B"><span class="toc-number">4.1.</span> <span class="toc-text">大数定律</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83%E3%80%81Fisher%E5%AE%9A%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">抽样分布、Fisher定理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81"><span class="toc-number">5.1.</span> <span class="toc-text">常用统计量的数字特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%A4%A7%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83%EF%BC%9A"><span class="toc-number">5.2.</span> <span class="toc-text">三大抽样分布：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83"><span class="toc-number">5.3.</span> <span class="toc-text">正态总体抽样分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1"><span class="toc-number">6.</span> <span class="toc-text">参数估计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%82%B9%E4%BC%B0%E8%AE%A1"><span class="toc-number">6.1.</span> <span class="toc-text">点估计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%B0%E8%AE%A1%E9%87%8F%E7%9A%84%E8%AF%84%E4%BB%B7%E6%A0%87%E5%87%86-%E5%8C%BA%E9%97%B4%E4%BC%B0%E8%AE%A1"><span class="toc-number">7.</span> <span class="toc-text">估计量的评价标准 区间估计</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://walkerkiller.github.io/2026/01/09/Probability-Statistics-Notes/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="WALKERKILLER"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="WALKERKILLER'S EDEN"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">概率论与数理统计知识点</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2026-01-09 00:00:00" itemprop="dateCreated datePublished" datetime="2026-01-09T00:00:00+08:00">2026-01-09</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">3k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">15m</span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E7%AC%94%E8%AE%B0/" style="--text-color:dimgray" itemprop="url" rel="index"><span itemprop="text">笔记</span></a></span> > <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E7%AC%94%E8%AE%B0/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">概率论与数理统计</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E7%AC%94%E8%AE%B0/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">笔记</span></a><a class="tag-item" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">概率论与数理统计</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h2 id="随机变量及其分布"><a href="#随机变量及其分布" class="headerlink" title="随机变量及其分布"></a>随机变量及其分布</h2><h3 id="随机变量及其分布-1"><a href="#随机变量及其分布-1" class="headerlink" title="随机变量及其分布"></a><strong>随机变量及其分布</strong></h3><p><strong>分布函数：</strong> $def: F(x) &#x3D; P(X \le x)$</p>
+<ul>
+<li><strong>性质：</strong> 非负性、单调性、规范性、连续性（右连续）</li>
+</ul>
+<h3 id="离散分布"><a href="#离散分布" class="headerlink" title="离散分布"></a><strong>离散分布</strong></h3><ol>
+<li><strong>二项分布：</strong> $X \sim B(n, p)$<ul>
+<li>$P(X&#x3D;k) &#x3D; C_n^k p^k (1-p)^{n-k} \quad (k&#x3D;0, 1, \dots, n)$</li>
+<li>$EX &#x3D; np$, $VarX &#x3D; np(1-p)$</li>
+</ul>
+</li>
+<li><strong>几何分布：</strong> $X \sim Ge(p)$<ul>
+<li>$P(X&#x3D;k) &#x3D; (1-p)^{k-1}p \quad (k&#x3D;1, 2, \dots)$</li>
+<li>$EX &#x3D; \frac{1}{p}$, $VarX &#x3D; \frac{1-p}{p^2}$</li>
+</ul>
+</li>
+<li><strong>泊松分布：</strong> $X \sim P(\lambda)$<ul>
+<li>$P(X&#x3D;k) &#x3D; \frac{\lambda^k e^{-\lambda}}{k!} \quad (k&#x3D;0, 1, 2, \dots)$</li>
+<li>$EX &#x3D; \lambda$, $VarX &#x3D; \lambda$</li>
+<li><strong>泊松定理：</strong> $X \sim B(n, p) \xrightarrow[\text{近似}]{np \to \lambda, n \text{很大}} X \sim P(np)$</li>
+</ul>
+</li>
+</ol>
+<h3 id="连续分布"><a href="#连续分布" class="headerlink" title="连续分布"></a><strong>连续分布</strong></h3><ol>
+<li><p><strong>均匀分布：</strong> $X \sim U(a, b)$</p>
+<ul>
+<li>$f(x) &#x3D; \begin{cases} \frac{1}{b-a} &amp; a &lt; x &lt; b \ 0 &amp; \text{余} \end{cases}$</li>
+<li>$EX &#x3D; \frac{a+b}{2}$</li>
+<li>$VarX &#x3D; \frac{(b-a)^2}{12}$</li>
+<li>$F(x) &#x3D; \begin{cases} 0 &amp; x &lt; a \ \frac{x-a}{b-a} &amp; a \le x &lt; b \ 1 &amp; x \ge b \end{cases}$</li>
+</ul>
+</li>
+<li><p><strong>指数分布：</strong> $X \sim E(\lambda)$</p>
+<ul>
+<li>$f(x) &#x3D; \begin{cases} \lambda e^{-\lambda x} &amp; x &gt; 0 \ 0 &amp; \text{余} \end{cases}$</li>
+<li>$EX &#x3D; \frac{1}{\lambda}$</li>
+<li>$VarX &#x3D; \frac{1}{\lambda^2}$</li>
+<li>$F(x) &#x3D; \begin{cases} 1 - e^{-\lambda x} &amp; x &gt; 0 \ 0 &amp; x \le 0 \end{cases}$</li>
+<li><strong>tips：指数分布具有无记忆性，即 $P(X &gt; s+t | X &gt; s) &#x3D; P(X &gt; t)$</strong></li>
+</ul>
+<blockquote>
+<ul>
+<li><p>① 问“小于” ($X \le x$)：即“在 $x$ 时间前坏掉&#x2F;发生”的概率：</p>
+<p>$$F(x) &#x3D; P(X \le x) &#x3D; 1 - e^{-\lambda x}$$</p>
+</li>
+<li><p>② 问“大于” ($X &gt; x$)：即“活过 $x$ 时间 &#x2F; 至少能用 $x$ 小时”的概率（这叫生存函数）：</p>
+<p>$$P(X &gt; x) &#x3D; e^{-\lambda x}$$</p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>正态分布：</strong> $X \sim N(\mu, \sigma^2)$</p>
+<ul>
+<li>$f(x) &#x3D; \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}} \quad -\infty &lt; x &lt; +\infty$</li>
+<li>$EX &#x3D; \mu$, $VarX &#x3D; \sigma^2$</li>
+<li><strong>标准正态分布：</strong> $X \sim N(0, 1)$, $\varphi(x) &#x3D; \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$</li>
+<li>$F(x) &#x3D; P(X \le x) &#x3D; P(\frac{X-\mu}{\sigma} \le \frac{x-\mu}{\sigma}) &#x3D; \Phi(\frac{x-\mu}{\sigma})$</li>
+<li><strong>性质：</strong> $\Phi(-a) &#x3D; 1 - \Phi(a)$, $\Phi(0) &#x3D; \frac{1}{2}$, $P(|X| \le a) &#x3D; 2\Phi(a) - 1$</li>
+<li><blockquote>
+<p><strong>if $f(x) &#x3D; Ae^{ax+bx+c}$ $(x \in (a, b) (or) x \in (-\infty, +\infty))$ 则为正态</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="随机变量函数的分布："><a href="#随机变量函数的分布：" class="headerlink" title="随机变量函数的分布："></a><strong>随机变量函数的分布：</strong></h3><ul>
+<li><strong>命题：</strong> $F_Y(y) &#x3D; P(Y \le y) &#x3D; P(g(X) \le y) &#x3D; \int_{g(x)\le y} f_X(x)dx$</li>
+<li><strong>定理：</strong> $X$ 的密度函数 $f_X(x)$ 在 $(a, b)$ 之间严格单调，则 $Y&#x3D;f(X)$ 服从 $(a, b)$ 上的分布：<ul>
+<li>$0 \le y \le 1$: $f_Y(y) &#x3D; P(|{y}|) &#x3D; P(F^{-1}(y)) |(F^{-1})’(y)|$</li>
+<li>$ &#x3D; P|X \le F^{-1}(y)| &#x3D; F(F^{-1}(y)) &#x3D; y$ <strong>(均匀分布)</strong></li>
+<li>一般地：$f_Y(y) &#x3D; f_X[h(y)] \cdot |h’(y)|$ （其中 $x&#x3D;h(y)$ 是反函数）</li>
+</ul>
+</li>
+</ul>
+<h3 id="多维随机变量及分布："><a href="#多维随机变量及分布：" class="headerlink" title="多维随机变量及分布："></a><strong>多维随机变量及分布：</strong></h3><p>$$<br>F(x, y) &#x3D; P(X \le x, Y \le y)<br>$$</p>
+<ul>
+<li><strong>性质：</strong><ol>
+<li>$F(+\infty, +\infty) &#x3D; 1$, $F(-\infty, +\infty) &#x3D; 0$, $F(+\infty, -\infty) &#x3D; 0$</li>
+<li>非负性、规范性、单调不减性、右连续性</li>
+<li>$P(x_1 &lt; X \le x_2, y_1 &lt; Y \le y_2) &#x3D; F(x_2, y_2) - F(x_1, y_2) - F(x_2, y_1) + F(x_1, y_1)$</li>
+</ol>
+</li>
+</ul>
+<h4 id="二维连续"><a href="#二维连续" class="headerlink" title="二维连续"></a><strong>二维连续</strong></h4><ul>
+<li>$F(x, y) &#x3D; \int_{-\infty}^{x} \int_{-\infty}^{y} f(u, v) du dv$</li>
+</ul>
+<ul>
+<li>$P((X,Y) \in G) &#x3D; \iint_G f(x, y) dx dy$</li>
+</ul>
+<h4 id="边缘概率密度"><a href="#边缘概率密度" class="headerlink" title="边缘概率密度"></a><strong>边缘概率密度</strong></h4><ul>
+<li>$f_X(x) &#x3D; \int_{-\infty}^{+\infty} f(x, y) dy$</li>
+<li>$f_Y(y) &#x3D; \int_{-\infty}^{+\infty} f(x, y) dx$</li>
+</ul>
+<h4 id="条件概率密度"><a href="#条件概率密度" class="headerlink" title="条件概率密度"></a><strong>条件概率密度</strong></h4><ul>
+<li>$f_{X|Y}(x|y) &#x3D; \frac{f(x, y)}{f_Y(y)}$ 为在 $Y&#x3D;y$ 条件下 $X$ 的概率密度（要写出来）</li>
+</ul>
+<h4 id="独立性：-f-x-y-f-X-x-cdot-f-Y-y"><a href="#独立性：-f-x-y-f-X-x-cdot-f-Y-y" class="headerlink" title="独立性： $f(x, y) &#x3D; f_X(x) \cdot f_Y(y)$"></a><strong>独立性：</strong> $f(x, y) &#x3D; f_X(x) \cdot f_Y(y)$</h4><h4 id="二维均匀分布：-A-S-D-f-x-y-begin-cases-frac-1-S-D-x-y-in-D-0-text-余-end-cases"><a href="#二维均匀分布：-A-S-D-f-x-y-begin-cases-frac-1-S-D-x-y-in-D-0-text-余-end-cases" class="headerlink" title="二维均匀分布： $A &#x3D; S_D$, $f(x, y) &#x3D; \begin{cases} \frac{1}{S_D} &amp; (x, y) \in D \ 0 &amp; \text{余} \end{cases}$"></a><strong>二维均匀分布：</strong> $A &#x3D; S_D$, $f(x, y) &#x3D; \begin{cases} \frac{1}{S_D} &amp; (x, y) \in D \ 0 &amp; \text{余} \end{cases}$</h4><p><strong>性质：</strong></p>
+<ol>
+<li>$(X, Y)$ 在 $D &#x3D; { (x, y) | a \le x \le b, c \le y \le d }$ 上服从二维均匀分布 $\iff X \sim U(a, b), Y \sim U(c, d)$</li>
+<li>$(X, Y) \in G, P((X, Y) \in G) &#x3D; \frac{S_G}{S_D}$</li>
+<li><strong>But!!!</strong> $(X, Y)$ 服从二维均匀分布 $\nRightarrow X, Y$ 服从一维均匀分布 (反之亦然)</li>
+</ol>
+<h4 id="二维正态、极值、可加性与数字特征"><a href="#二维正态、极值、可加性与数字特征" class="headerlink" title="二维正态、极值、可加性与数字特征"></a>二维正态、极值、可加性与数字特征</h4><p><strong>二维正态分布：</strong> $(X, Y) \sim N(\mu_1, \mu_2; \sigma_1^2, \sigma_2^2; \rho)$<br><strong>性质：</strong></p>
+<ol>
+<li><strong>边缘分布是正态分布：</strong> $X \sim N(\mu_1, \sigma_1^2)$, $Y \sim N(\mu_2, \sigma_2^2)$</li>
+<li>$X$ 与 $Y$ <strong>相互独立之充要条件</strong> $\rho &#x3D; 0$</li>
+<li>$aX + bY \sim N(a\mu_1 + b\mu_2, a^2\sigma_1^2 + b^2\sigma_2^2 + 2ab\rho\sigma_1\sigma_2)$</li>
+<li>条件分布正态分布</li>
+<li>$(aX+b, cY+d)$ 也服从二维正态。$|\begin{smallmatrix} a &amp; b \ c &amp; d \end{smallmatrix}| \ne 0$</li>
+</ol>
+<p><strong>计算：</strong> $X_1 \sim N(\mu_1, \sigma_1^2)$ 且相互独立 $\sum a_i X_i \sim N(\sum a_i \mu_i, \sum a_i^2 \sigma_i^2)$</p>
+<h4 id="二维随机变量函数分布："><a href="#二维随机变量函数分布：" class="headerlink" title="二维随机变量函数分布："></a><strong>二维随机变量函数分布：</strong></h4><p>$F_Z(z) &#x3D; P(Z \le z) &#x3D; P(X+Y \le z) &#x3D; \iint_{x+y \le z} f(x, y) dx dy$</p>
+<p>两种方法，一种分布函数法，普遍适用，如果相互独立，可以卷积</p>
+<p>如果 $X$ 和 $Y$ <strong>独立</strong>，我们可以跳过二重积分，直接套单重积分公式。</p>
+<p>卷积公式：</p>
+<p>$$f_Z(z) &#x3D; \int_{-\infty}^{+\infty} f_X(x) \cdot f_Y(z-x) , dx$$</p>
+<p><strong>两个坑</strong></p>
+<ol>
+<li><strong>$f_Y(z-x)$ 是啥？</strong> 就是把 $f_Y(y)$ 里的 $y$ 替换成 $z-x$。</li>
+<li><strong>积分限怎么定？</strong><ul>
+<li>公式写的是 $-\infty$ 到 $+\infty$，但实际上要看 $f_X(x)$ 和 $f_Y(z-x)$ <strong>哪里不为 0</strong></li>
+<li>我们要找这两个函数“非零区域”的<strong>交集</strong></li>
+</ul>
+</li>
+</ol>
+<h4 id="最大值最小值分布："><a href="#最大值最小值分布：" class="headerlink" title="最大值最小值分布："></a><strong>最大值最小值分布：</strong></h4><p>$$X_1 \dots X_n$$ 相互独立</p>
+<ul>
+<li>$U &#x3D; \max{X_1 \dots X_n}$<ul>
+<li>$F_{max}(z) &#x3D; F_{X_1}(z) F_{X_2}(z) \dots F_{X_n}(z)$</li>
+<li>if iid $F_{max}(z) &#x3D; [F(z)]^n$</li>
+</ul>
+</li>
+<li>$V &#x3D; \min{X_1 \dots X_n}$<ul>
+<li>$F_{min}(z) &#x3D; 1 - [1-F_{X_1}(z)][1-F_{X_2}(z)]\dots[1-F_{X_n}(z)]$</li>
+<li>if iid $F_{min}(z) &#x3D; 1 - [1-F(z)]^n$</li>
+</ul>
+</li>
+</ul>
+<h4 id="具有可加性的分布："><a href="#具有可加性的分布：" class="headerlink" title="具有可加性的分布："></a><strong>具有可加性的分布：</strong></h4><ul>
+<li>$X_i \sim B(n_i, p) \Rightarrow X_1 + X_2 + \dots + X_n \sim B(n_1+\dots+n_k, p)$</li>
+<li>(独立同分布)</li>
+<li>$X_i \sim P(\lambda_i) \Rightarrow X_1 + X_2 + \dots + X_k \sim P(\lambda_1 + \dots + \lambda_k)$</li>
+<li>$X_i \sim N(\mu_i, \sigma_i^2) \Rightarrow a_1 X_1 + a_2 X_2 + \dots + a_k X_k \sim N(\sum a_i \mu_i, \sum a_i^2 \sigma_i^2)$</li>
+<li>$X_i \sim \chi^2(n_i) \Rightarrow X_1 + X_2 + \dots + X_k \sim \chi^2(n_1 + n_2 + \dots + n_k)$</li>
+<li>$X_i \sim E(\lambda) \Rightarrow \min(X_1, X_2 \dots X_k) \sim E(\lambda_1 + \lambda_2 + \dots + \lambda_k)$</li>
+</ul>
+<h2 id="数字特征"><a href="#数字特征" class="headerlink" title="数字特征"></a>数字特征</h2><ul>
+<li>期望：性质：$E(c) &#x3D; c$, $E(cX) &#x3D; cE(X)$, $E(X+c) &#x3D; E(X)+c$, $X, Y$ 相互独立 $E(XY) &#x3D; E(X)E(Y)$</li>
+<li>方差：性质：$Var(c) &#x3D; 0$, $Var(cX) &#x3D; c^2 VarX$, if $X, Y$ 相互独立 $Var(X \pm Y) &#x3D; VarX + VarY$</li>
+<li><strong>切比雪夫不等式：</strong> $def: P(|X - EX| \ge \varepsilon) \le \frac{VarX}{\varepsilon^2}$</li>
+</ul>
+<h2 id="协方差、相关系数、大数定律"><a href="#协方差、相关系数、大数定律" class="headerlink" title="协方差、相关系数、大数定律"></a>协方差、相关系数、大数定律</h2><h3 id="协方差"><a href="#协方差" class="headerlink" title="协方差"></a><strong>协方差</strong></h3><p>$def: Cov(XY) &#x3D; E(XY) - EX \cdot EY$</p>
+<p><strong>性质：</strong></p>
+<ol>
+<li>$Cov(X, X) &#x3D; Cov(Y, Y)$</li>
+<li>$Cov(X, c) &#x3D; 0$</li>
+<li>$Cov(aX, bY) &#x3D; ab Cov(X, Y)$</li>
+<li>$Cov(X \pm Y, Z) &#x3D; Cov(X, Z) + Cov(Y, Z)$<ul>
+<li>$if$ $X, Y$ 独立 $Cov(X, Y) &#x3D; 0$</li>
+</ul>
+</li>
+<li>$Var(X \pm Y) &#x3D; VarX + VarY \pm 2Cov(X, Y)$<ul>
+<li>$Cov(X, X) &#x3D; VarX$</li>
+</ul>
+</li>
+</ol>
+<h3 id="相关系数"><a href="#相关系数" class="headerlink" title="相关系数"></a><strong>相关系数</strong></h3><p>$def: \rho_{XY} &#x3D; Corr(X, Y) &#x3D; \frac{Cov(X, Y)}{\sqrt{VarX}\sqrt{VarY}}$</p>
+<ul>
+<li>if $Corr(X, Y) &#x3D; 0$ 则 $X, Y$ 不相关</li>
+</ul>
+<p><strong>性质：</strong></p>
+<ol>
+<li>$|\rho_{XY}| \le 1$, $\rho_{XX} &#x3D; \rho_{YX}$, $\rho_{XX} &#x3D; 1$</li>
+<li>$|\rho_{XY}| &#x3D; 1 \iff P(Y &#x3D; aX+b) &#x3D; 1$</li>
+<li>$|\rho_{XY}|$ 越接近1，表明 $X, Y$ 的线性相关程度越大<ul>
+<li>只有当 $(X, Y) \sim N$，独立 $\iff$ 不相关</li>
+</ul>
+</li>
+</ol>
+<h2 id="大数定律和中心极限定理"><a href="#大数定律和中心极限定理" class="headerlink" title="大数定律和中心极限定理"></a>大数定律和中心极限定理</h2><h3 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a><strong>大数定律</strong></h3><p>$def: \lim_{n \to \infty} P(|X_n - a| \ge \varepsilon) &#x3D; 0 \Rightarrow X_n \xrightarrow{P} a$ (依概率收敛)</p>
+<p><strong>性质：</strong> $X_n \xrightarrow{P} a$, 则 $g(X_n) \xrightarrow{P} g(a)$ ($g(x)$ 在 $a$ 处连续)</p>
+<ol>
+<li><p><strong>切比雪夫大数定律：</strong> $X_1 \dots X_n$ 两两不相关，且 $Var X_n$ 一致有界。 $\bar{X} \xrightarrow{P} E\bar{X}$</p>
+<ul>
+<li>$\lim_{n \to \infty} P(|\frac{1}{n}\sum X_i - \frac{1}{n}\sum EX_i| &lt; \varepsilon) &#x3D; 1$.</li>
+</ul>
+</li>
+<li><p>(常用) <strong>辛钦大数定律：</strong> $1^\circ X_1 \dots X_n$ iid $2^\circ EX_i &#x3D; \mu$ 存在。</p>
+<ul>
+<li>$\bar{X} \xrightarrow{P} \mu$, $\lim_{n \to \infty} P(|\frac{1}{n}\sum X_i - \mu| &lt; \varepsilon) &#x3D; 1$</li>
+</ul>
+</li>
+<li><p><strong>列维-林德伯格定理：</strong> $X_1 \dots X_n$ iid, $EX_k &#x3D; \mu, Var X_k &#x3D; \sigma^2 &gt; 0$</p>
+</li>
+</ol>
+<ul>
+<li>即：$\sum X_i \xrightarrow{近似} N(n\mu, n\sigma^2)$</li>
+<li>$\frac{\sum X_i - n\mu}{\sqrt{n}\sigma} &#x3D; \frac{\bar{X} - \mu}{\sigma&#x2F;\sqrt{n}} \xrightarrow{近似} (0, 1)$.</li>
+</ul>
+<ol start="4">
+<li><strong>棣莫弗-拉普拉斯定理：</strong> $X_n \sim B(n, p)$, $X_n \xrightarrow{n \to \infty} N(np, np(1-p))$</li>
+</ol>
+<hr>
+<h2 id="抽样分布、Fisher定理"><a href="#抽样分布、Fisher定理" class="headerlink" title="抽样分布、Fisher定理"></a>抽样分布、Fisher定理</h2><h3 id="常用统计量的数字特征"><a href="#常用统计量的数字特征" class="headerlink" title="常用统计量的数字特征"></a>常用统计量的数字特征</h3><p><strong>1. 样本均值</strong>$$\overline{X} &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}X_i ;$$</p>
+<p><strong>2. 样本方差</strong>$$S^2 &#x3D; \frac{1}{n-1}\sum_{i&#x3D;1}^{n}(X_i - \overline{X})^2 ;$$</p>
+<ol start="3">
+<li><strong>样本标准差</strong>$$S &#x3D; \sqrt{\frac{1}{n-1}\sum_{i&#x3D;1}^{n}(X_i - \overline{X})^2} ;$$</li>
+</ol>
+<p><strong>● 5个常用结论</strong></p>
+<p>$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的样本，$EX &#x3D; \mu, VarX &#x3D; \sigma^2$</p>
+<ol>
+<li><p>$EX_i &#x3D; \mu, \quad VarX_i &#x3D; \sigma^2$;</p>
+</li>
+<li><p>$E\overline{X} &#x3D; \mu, \quad Var\overline{X} &#x3D; \frac{\sigma^2}{n}$;</p>
+</li>
+<li><p>$ES^2 &#x3D; \sigma^2$ ，$Var S^2&#x3D;\frac{2\sigma^{4}}{n-1}$</p>
+</li>
+</ol>
+<h3 id="三大抽样分布："><a href="#三大抽样分布：" class="headerlink" title="三大抽样分布："></a><strong>三大抽样分布：</strong></h3><ol>
+<li><strong>$\chi^2$ 分布：</strong> $def$: $X_1 \dots X_n$ 相互独立 $N(0, 1)$，相互独立。则 $\chi^2 &#x3D; X_1^2 + \dots + X_n^2$<ul>
+<li>$\chi^2 \sim \chi^2(n)$</li>
+<li>$E\chi^2 &#x3D; n$, $Var\chi^2 &#x3D; 2n$</li>
+<li><strong>性质：可加性：</strong> $\chi_1^2 \sim \chi^2(n_1), \chi_2^2 \sim \chi^2(n_2)$ 且独立，则 $\chi_1^2+\chi_2^2 \sim \chi^2(n_1+n_2)$</li>
+</ul>
+</li>
+<li><strong>t 分布：</strong> $def: X \sim N(0, 1), Y \sim \chi^2(n)$, $X, Y$ 独立。<ul>
+<li>$t &#x3D; \frac{X}{\sqrt{Y&#x2F;n}} \sim t(n)$ （自由度为 $n$ 的 $t$ 分布）</li>
+<li><strong>性质：</strong> $t$ 分布的概率密度是偶函数</li>
+</ul>
+</li>
+<li><strong>F 分布：</strong> $def: X \sim \chi^2(n_1), Y \sim \chi^2(n_2)$, $X, Y$ 独立<ul>
+<li>$F &#x3D; \frac{X&#x2F;n_1}{Y&#x2F;n_2} \sim F(n_1, n_2)$</li>
+<li><strong>性质：</strong> $1) F \sim F(n_1, n_2) \Rightarrow \frac{1}{F} \sim F(n_2, n_1)$, $2) X \sim t(n) \Rightarrow X^2 \sim F(1, n)$.</li>
+</ul>
+</li>
+</ol>
+<h3 id="正态总体抽样分布"><a href="#正态总体抽样分布" class="headerlink" title="正态总体抽样分布"></a>正态总体抽样分布</h3><p> $def: X_1 \dots X_n$ 来自 $N(\mu, \sigma^2)$，$\bar{x} &#x3D; \frac{1}{n}\sum X_i, S^2 &#x3D; \frac{1}{n-1}\sum (X_i - \bar{x})^2$</p>
+<ul>
+<li>$1): \bar{x} \sim N(\mu, \frac{\sigma^2}{n})$, $(\bar{x} - \mu)\sqrt{n} &#x2F; \sigma \sim N(0, 1)$</li>
+<li>$2): \bar{x}$ 与 $S^2$ 相互独立</li>
+<li>$3): \frac{(n-1)S^2}{\sigma^2} &#x3D; \frac{\sum (X_i - \bar{x})^2}{\sigma^2} \sim \chi^2(n-1)$; $\frac{\sum (X_i - \mu)^2}{\sigma^2} \sim \chi^2(n)$.</li>
+<li>$4): T &#x3D; \frac{\bar{x} - \mu}{S&#x2F;\sqrt{n}} \sim t(n-1)$</li>
+</ul>
+<h2 id="参数估计"><a href="#参数估计" class="headerlink" title="参数估计"></a>参数估计</h2><h3 id="点估计"><a href="#点估计" class="headerlink" title="点估计"></a><strong>点估计</strong></h3><ul>
+<li><strong>矩估计法：</strong>$\frac{1}{n} \sum X_i^k \xrightarrow{P} EX^k$, $\frac{1}{n}\sum (X_i - \bar{x})^k \xrightarrow{P} E(X - EX)^k$</li>
+</ul>
+<ul>
+<li><p><strong>最大似然估计</strong>：</p>
+</li>
+<li><p>离散型总体<br>若总体 $X$ 的分布律为 $P(X&#x3D;x) &#x3D; p(x; \theta)$，则似然函数为：<br>$$L(\theta) &#x3D; \prod_{i&#x3D;1}^{n} p(x_i; \theta)$$</p>
+</li>
+<li><p>连续型总体<br>若总体 $X$ 的概率密度函数为 $f(x; \theta)$，则似然函数为：<br>$$L(\theta) &#x3D; \prod_{i&#x3D;1}^{n} f(x_i; \theta)$$</p>
+</li>
+<li><p><strong>第一步：构造似然函数</strong><br>写出样本的联合概率分布（或联合密度函数）：<br>$$L(\theta) &#x3D; \prod_{i&#x3D;1}^{n} p(x_i; \theta) \quad \text{或} \quad \prod_{i&#x3D;1}^{n} f(x_i; \theta)$$</p>
+</li>
+<li><p><strong>第二步：取对数</strong><br>为了简化计算（将连乘 $\prod$ 转化为求和 $\sum$，方便求导），对 $L(\theta)$ 取自然对数：<br>$$\ln L(\theta) &#x3D; \sum_{i&#x3D;1}^{n} \ln p(x_i; \theta) \quad \text{或} \quad \sum_{i&#x3D;1}^{n} \ln f(x_i; \theta)$$</p>
+</li>
+<li><p><strong>第三步：建立似然方程并求解</strong><br>对 $\theta$ 求导，并令导数为 0（寻找驻点）：<br>$$\frac{d[\ln L(\theta)]}{d\theta} &#x3D; 0$$<br>解出的 $\hat{\theta}$ 即为最大似然估计值。</p>
+</li>
+<li><p>似然函数单调的用次序统计量</p>
+</li>
+</ul>
+<h2 id="估计量的评价标准-区间估计"><a href="#估计量的评价标准-区间估计" class="headerlink" title="估计量的评价标准 区间估计"></a>估计量的评价标准 区间估计</h2><p><strong>估计量的评价标准：</strong> </p>
+<ol>
+<li><strong>无偏性：</strong> $E(\hat{\theta}) &#x3D; \theta \Rightarrow$ 无偏估计 </li>
+<li><strong>有效性：</strong> $Var \hat{\theta}_1 &lt; Var \hat{\theta}_2$，则 $\hat{\theta}_1$ 更有效。 </li>
+<li><strong>相合性：</strong> $\hat{\theta} \xrightarrow{P} \theta$</li>
+</ol>
+<p><strong>区间估计：枢轴量</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">待估参数</th>
+<th align="left">已知条件</th>
+<th align="left">枢轴量 &amp; 分布</th>
+<th align="left">置信区间 $(1-\alpha)$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>$\mu$</strong></td>
+<td align="left">$\sigma^2$ 已知</td>
+<td align="left">$\displaystyle \frac{\bar{X}-\mu}{\sigma&#x2F;\sqrt{n}} \sim N(0,1)$</td>
+<td align="left">$\displaystyle \left( \bar{x} - u_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}, \quad \bar{x} + u_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} \right)$</td>
+</tr>
+<tr>
+<td align="center"><strong>$\mu$</strong></td>
+<td align="left">$\sigma^2$ 未知</td>
+<td align="left">$\displaystyle \frac{\bar{X}-\mu}{S&#x2F;\sqrt{n}} \sim t(n-1)$</td>
+<td align="left">$\displaystyle \left( \bar{x} - t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}, \quad \bar{x} + t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}} \right)$</td>
+</tr>
+<tr>
+<td align="center"><strong>$\sigma^2$</strong></td>
+<td align="left">$\mu$ 已知</td>
+<td align="left">$\displaystyle \frac{\sum_{i&#x3D;1}^n(X_i-\mu)^2}{\sigma^2} \sim \chi^2(n)$</td>
+<td align="left">$\displaystyle \left( \frac{\sum_{i&#x3D;1}^n(X_i-\mu)^2}{\chi^2_{1-\frac{\alpha}{2}}(n)}, \quad \frac{\sum_{i&#x3D;1}^n(X_i-\mu)^2}{\chi^2_{\frac{\alpha}{2}}(n)} \right)$</td>
+</tr>
+<tr>
+<td align="center"><strong>$\sigma^2$</strong></td>
+<td align="left">$\mu$ 未知</td>
+<td align="left">$\displaystyle \frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)$</td>
+<td align="left">$\displaystyle \left( \frac{(n-1)S^2}{\chi^2_{1-\frac{\alpha}{2}}(n-1)}, \quad \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}}(n-1)} \right)$</td>
+</tr>
+</tbody></table>
+<p>算单侧的把$$\frac{\alpha}{2}$$换成$$\alpha$$</p>
+<p><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260109025302521.png" loading="lazy"></p>
+<p><strong>次序统计量：</strong></p>
+<ul>
+<li><p><strong>最小值分布</strong> (记为 $X_{(1)}$ 或 $\min$)：<br>$$F_{X_{(1)}}(x) &#x3D; 1 - {1 - F(x)}^n$$</p>
+</li>
+<li><p><strong>最大值分布</strong> (记为 $X_{(n)}$ 或 $\max$)：<br>$$F_{X_{(n)}}(x) &#x3D; [F(x)]^n$$</p>
+</li>
+</ul>
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>WALKERKILLER</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://walkerkiller.github.io/2026/01/09/Probability-Statistics-Notes/" title="概率论与数理统计知识点">https://walkerkiller.github.io/2026/01/09/Probability-Statistics-Notes/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2025/12/28/Russian1-Note/" rel="next" title="俄语二外笔记"><span class="post-nav-text">俄语二外笔记</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2026 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> WALKERKILLER</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style></body></html>
