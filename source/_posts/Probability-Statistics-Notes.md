@@ -74,9 +74,7 @@ categories:
 
 ### **多维随机变量及分布：**
 
-$$
-F(x, y) = P(X \le x, Y \le y)
-$$
+$$F(x, y) = P(X \le x, Y \le y)$$
 
 *   **性质：**
     1.  $F(+\infty, +\infty) = 1$, $F(-\infty, +\infty) = 0$, $F(+\infty, -\infty) = 0$
@@ -98,9 +96,14 @@ $$
 
 *   $f_{X|Y}(x|y) = \frac{f(x, y)}{f_Y(y)}$ 为在 $Y=y$ 条件下 $X$ 的概率密度（要写出来）
 
-#### **独立性：** $f(x, y) = f_X(x) \cdot f_Y(y)$
+#### **独立性**
 
-#### **二维均匀分布：** $A = S_D$, $f(x, y) = \begin{cases} \frac{1}{S_D} & (x, y) \in D \\ 0 & \text{余} \end{cases}$
+$f(x, y) = f_X(x) \cdot f_Y(y)$
+
+#### **二维均匀分布** 
+
+$A = S_D$, $f(x, y) = \begin{cases} \frac{1}{S_D} & (x, y) \in D \\ 0 & \text{余} \end{cases}$
+
 **性质：**
 
 1.  $(X, Y)$ 在 $D = \{ (x, y) | a \le x \le b, c \le y \le d \}$ 上服从二维均匀分布 $\iff X \sim U(a, b), Y \sim U(c, d)$
@@ -305,7 +308,7 @@ $X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的样本，$EX = \mu, VarX = \sigma
 | **$\sigma^2$** | $\mu$ 已知      | $\displaystyle \frac{\sum_{i=1}^n(X_i-\mu)^2}{\sigma^2} \sim \chi^2(n)$ | $\displaystyle \left( \frac{\sum_{i=1}^n(X_i-\mu)^2}{\chi^2_{1-\frac{\alpha}{2}}(n)}, \quad \frac{\sum_{i=1}^n(X_i-\mu)^2}{\chi^2_{\frac{\alpha}{2}}(n)} \right)$ |
 | **$\sigma^2$** | $\mu$ 未知      | $\displaystyle \frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)$   | $\displaystyle \left( \frac{(n-1)S^2}{\chi^2_{1-\frac{\alpha}{2}}(n-1)}, \quad \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}}(n-1)} \right)$ |
 
-算单侧的把$$\frac{\alpha}{2}$$换成$$\alpha$$
+算单侧的把$\frac{\alpha}{2}$$换成$$\alpha$
 
 ![](https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260109025302521.png)
 
