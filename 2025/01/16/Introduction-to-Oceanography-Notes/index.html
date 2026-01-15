@@ -1,0 +1,514 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="WALKERKILLER"><meta name="copyright" content="WALKERKILLER"><meta name="generator" content="Hexo 7.3.0"><meta name="theme" content="hexo-theme-yun"><title>海洋科学导论笔记 | WALKERKILLER'S EDEN</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...true?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"walkerkiller.github.io","root":"/","title":["新","月","潮","汐","摄","动","流","形"],"version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="第一部分：海洋物理海水性质与物理环境1. 盐度 (Salinity)   定义: 海水中溶解的无机固体物质的总量。通常以千分比（ppt, ‰）表示，全球海洋平均盐度约为 35‰ 。 恒比定律确定盐度 (Principle of Constant Proportions): 无论海水盐度如何变化，海水中主要溶解离子（如氯离子、钠离子等）之间的比例是恒定的。因此，只需测量一种主要离子（通常是氯离子,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="海洋科学导论笔记">
+<meta property="og:url" content="https://walkerkiller.github.io/2025/01/16/Introduction-to-Oceanography-Notes/index.html">
+<meta property="og:site_name" content="WALKERKILLER&#39;S EDEN">
+<meta property="og:description" content="第一部分：海洋物理海水性质与物理环境1. 盐度 (Salinity)   定义: 海水中溶解的无机固体物质的总量。通常以千分比（ppt, ‰）表示，全球海洋平均盐度约为 35‰ 。 恒比定律确定盐度 (Principle of Constant Proportions): 无论海水盐度如何变化，海水中主要溶解离子（如氯离子、钠离子等）之间的比例是恒定的。因此，只需测量一种主要离子（通常是氯离子,">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031243774.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031318929.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031331023.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031341120.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031143348.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031401753.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031412985.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031427969.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031447911.png">
+<meta property="og:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031457232.png">
+<meta property="article:published_time" content="2025-01-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-15T16:00:00.000Z">
+<meta property="article:author" content="WALKERKILLER">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="海洋科学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031243774.png"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://fastly.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="WALKERKILLER"><img width="96" loading="lazy" src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg" alt="WALKERKILLER"><span class="site-author-status" title="不想上学">😭</span></a><div class="site-author-name"><a href="/about/">WALKERKILLER</a></div><span class="site-name">WALKERKILLER'S EDEN</span><sub class="site-subtitle">快逃，别回头，这里不是伊甸</sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">7</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/WALKERKILLER" title="GitHub" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="walkerkiller1202@gmail.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/artist?id=34348329" title="网易云音乐" target="_blank" style="color:#C10D0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/493316804" title="哔哩哔哩动画" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E6%B5%B7%E6%B4%8B%E7%89%A9%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">第一部分：海洋物理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%B7%E6%B0%B4%E6%80%A7%E8%B4%A8%E4%B8%8E%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83"><span class="toc-number">1.1.</span> <span class="toc-text">海水性质与物理环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%B0%94%E4%B8%8E%E6%B5%B7%E6%B4%8B%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">大气与海洋相互作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%B7%E6%B4%8B%E7%8E%AF%E6%B5%81"><span class="toc-number">1.3.</span> <span class="toc-text">海洋环流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BD%AE%E6%B1%90-Tides"><span class="toc-number">1.4.</span> <span class="toc-text">潮汐 (Tides)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A2%E6%B5%AA-Waves"><span class="toc-number">1.5.</span> <span class="toc-text">波浪 (Waves)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A2-Physical-Oceanography-English-Terminology-Explanation"><span class="toc-number">1.6.</span> <span class="toc-text">🟢 Physical Oceanography: English Terminology &amp; Explanation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%EF%BC%9A%E6%B5%B7%E6%B4%8B%E5%8C%96%E5%AD%A6"><span class="toc-number">2.</span> <span class="toc-text">第二部分：海洋化学</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B2%B3%E5%8F%A3-%E6%B5%B7%E6%B4%8B%E7%95%8C%E9%9D%A2"><span class="toc-number">2.1.</span> <span class="toc-text">河口-海洋界面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%B7%E6%B4%8B%E6%BC%94%E5%8C%96%E4%B8%8E%E6%B0%A7%E6%B0%94"><span class="toc-number">2.2.</span> <span class="toc-text">海洋演化与氧气</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F%E5%85%83%E7%B4%A0"><span class="toc-number">2.3.</span> <span class="toc-text">常量元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E9%87%8F%E5%85%83%E7%B4%A0"><span class="toc-number">2.4.</span> <span class="toc-text">微量元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%90%A5%E5%85%BB%E7%9B%90"><span class="toc-number">2.5.</span> <span class="toc-text">营养盐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A2%B3%E9%85%B8%E7%9B%90%E4%BD%93%E7%B3%BB"><span class="toc-number">2.6.</span> <span class="toc-text">碳酸盐体系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%B0%E8%B4%A8-%E5%8C%96%E5%AD%A6-%E7%94%9F%E6%80%81%E5%85%B3%E7%B3%BB"><span class="toc-number">2.7.</span> <span class="toc-text">地质-化学-生态关系</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%9A%E6%B5%B7%E6%B4%8B%E7%94%9F%E7%89%A9"><span class="toc-number">3.</span> <span class="toc-text">第三部分：海洋生物</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%9F%BA%E7%A1%80%E4%B8%8E%E9%80%82%E5%BA%94%E6%80%A7"><span class="toc-number">3.1.</span> <span class="toc-text">生命基础与适应性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E4%BA%A4%E4%BA%92"><span class="toc-number">3.2.</span> <span class="toc-text">生态系统与交互</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E7%BA%A7%E7%94%9F%E4%BA%A7%E5%8A%9B-Primary-Productivity"><span class="toc-number">3.3.</span> <span class="toc-text">初级生产力 (Primary Productivity)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BD%AE%E9%97%B4%E5%B8%A6-Intertidal-Zone"><span class="toc-number">3.4.</span> <span class="toc-text">潮间带 (Intertidal Zone)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E6%A0%91%E6%9E%97-Mangroves"><span class="toc-number">3.5.</span> <span class="toc-text">红树林 (Mangroves)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A2-Marine-Biology-English-Terminology-Explanation"><span class="toc-number">3.6.</span> <span class="toc-text">🟢 Marine Biology: English Terminology &amp; Explanation</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://walkerkiller.github.io/2025/01/16/Introduction-to-Oceanography-Notes/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="WALKERKILLER"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="WALKERKILLER'S EDEN"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">海洋科学导论笔记</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2025-01-16 00:00:00" itemprop="dateCreated datePublished" datetime="2025-01-16T00:00:00+08:00">2025-01-16</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">4k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">15m</span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E7%AC%94%E8%AE%B0/" style="--text-color:dimgray" itemprop="url" rel="index"><span itemprop="text">笔记</span></a></span> > <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E7%AC%94%E8%AE%B0/%E6%B5%B7%E6%B4%8B%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">海洋科学导论</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E7%AC%94%E8%AE%B0/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">笔记</span></a><a class="tag-item" href="/tags/%E6%B5%B7%E6%B4%8B%E7%A7%91%E5%AD%A6/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">海洋科学</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h1 id="第一部分：海洋物理"><a href="#第一部分：海洋物理" class="headerlink" title="第一部分：海洋物理"></a>第一部分：海洋物理</h1><h2 id="海水性质与物理环境"><a href="#海水性质与物理环境" class="headerlink" title="海水性质与物理环境"></a>海水性质与物理环境</h2><p><strong>1. 盐度 (Salinity)</strong></p>
+<p><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031243774.png" alt="image.png" loading="lazy"></p>
+<ul>
+<li><strong>定义</strong>: 海水中溶解的无机固体物质的总量。通常以千分比（ppt, ‰）表示，全球海洋平均盐度约为 35‰ 。</li>
+<li><strong>恒比定律确定盐度 (Principle of Constant Proportions)</strong>: 无论海水盐度如何变化，海水中主要溶解离子（如氯离子、钠离子等）之间的比例是恒定的。因此，只需测量一种主要离子（通常是氯离子, Chlorinity）的含量，就可以通过公式推算出总盐度：Salinity(‰)&#x3D;1.80655×Chlorinity(‰) 。</li>
+<li><strong>实际观测</strong>: 现代海洋学主要通过测量海水的<strong>电导率 (Conductivity)</strong> 来推算盐度，因为溶解盐类是离子，导电性与离子浓度成正比。仪器通常同时测量温度和压力来校正 。</li>
+</ul>
+<p><strong>2. pH值</strong></p>
+<ul>
+<li><p><strong>影响因素</strong>: 主要受溶解的二氧化碳 (CO2​) 浓度控制。CO2​ 溶于水形成碳酸，释放氢离子，降低pH。光合作用消耗 CO2​ 使pH升高；呼吸作用释放 CO2​ 使pH降低。温度也会影响气体溶解度 。</p>
+</li>
+<li><p><strong>随深度变化</strong>:</p>
+<ul>
+<li><p><strong>表层</strong>: pH较高（约8.2），因为浮游植物光合作用消耗了 CO2​。</p>
+</li>
+<li><p><strong>中层</strong>: pH 随深度降低，在“最小含氧层”附近达到最低。这是因为细菌分解下沉的有机物（呼吸作用），消耗氧气并释放大量 CO2​。</p>
+</li>
+<li><p><strong>深层</strong>: pH 略有回升，因为碳酸钙外壳的溶解消耗了氢离子，且深层水体主要来源于极地表层沉降水，CO2​ 含量相对饱和但稳定 。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 密度 (Density)</strong></p>
+<ul>
+<li><p><strong>影响因素</strong>: 温度（反比，最主要因素）、盐度（正比）、压力（正比，影响较小，仅在深海明显）。</p>
+</li>
+<li><p><strong>分层结构</strong>:</p>
+<ul>
+<li><p><strong>混合层 (Mixed Layer)</strong>: 表层，受风浪搅拌，温盐性质均匀，密度较低。</p>
+</li>
+<li><p><strong>密度跃层 (Pycnocline)</strong>: 密度随深度急剧增加的区域，通常也是温跃层 (Thermocline) 所在，阻碍上下水体交换。</p>
+</li>
+<li><p><strong>深层水 (Deep Water)</strong>: 密度最大，水体寒冷均一，占据海洋体积的绝大部分 。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>其他问题:</strong></p>
+<ul>
+<li><p><strong>声音传播</strong>: 声音在海洋中的传播受折射影响。在**声发声道 (SOFAR channel)**（通常在温跃层底部，声速最小的深度），声波因折射效应被“限制”在该层内传播，能量损失极小，可传播数千英里 。</p>
+</li>
+<li><p><strong>蓝色海洋</strong>: 水分子对光谱中波长较长的红光、橙光吸收最强，而波长较短的<strong>蓝光</strong>最容易被散射和反射回表面，因此人眼看到的是蓝色 。</p>
+</li>
+<li><p><strong>仪器</strong>:</p>
+<ul>
+<li><p><strong>Multibeam Sonar (多波束声纳)</strong>: 用于海底地形测绘，通过发射多个扇形声波束测量水深 。</p>
+</li>
+<li><p><strong>ADCP (声学多普勒流速剖面仪)</strong>: 利用多普勒效应测量不同深度水流的速度和方向 。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>海冰</strong>: 海冰因水结冰时排出盐分（卤水排出），密度比液态海水小，因此漂浮。它具有高**反照率 (Albedo)**，能反射大量太阳辐射，对调节地球热平衡至关重要 。</p>
+</li>
+<li><p><strong>近期变化</strong>: 北极海冰范围显著缩小，夏季无冰区扩大；南极海冰变化较复杂，部分区域崩解加速 。</p>
+</li>
+</ul>
+<h2 id="大气与海洋相互作用"><a href="#大气与海洋相互作用" class="headerlink" title="大气与海洋相互作用"></a>大气与海洋相互作用</h2><p><strong>1. 水汽容量与空气密度</strong></p>
+<ul>
+<li><strong>水汽容量</strong>: 暖空气比冷空气能容纳更多的水汽 。</li>
+<li><strong>密度</strong>: 在相同温度和压力下，<strong>潮湿空气 (humid air) 比干燥空气 (dry air) 密度更小</strong>。因为水分子 (H2​O, 分子量18) 比氮气 (N2​, 28) 和氧气 (O2​, 32) 轻，水汽加入会置换出较重的气体分子<br><strong>2. 降水成因</strong></li>
+</ul>
+<p>空气上升冷却，水汽过饱和凝结成液态水或冰晶，聚集形成云，最终降落 。</p>
+<p><strong>3. 不均匀受热与科氏力</strong></p>
+<ul>
+<li><p><strong>大气响应</strong>: 太阳辐射赤道强、极地弱，驱动大气由热赤道向冷极地流动（对流）。</p>
+</li>
+<li><p><strong>科氏力 (Coriolis Effect)</strong>: 因地球自转而产生的惯性力，使运动物体在北半球向右偏转，南半球向左偏转。它使大气环流不再是简单的南北对流，而是形成东西向的风带 。<br>  <img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031318929.png" alt="image.png" loading="lazy"></p>
+</li>
+</ul>
+<p><strong>4. 环流圈与风带</strong>: 每个半球有 <strong>3个</strong> 环流圈：</p>
+<ul>
+<li><p><strong>哈德里环流 (Hadley Cell)</strong> (0°-30°): 对应 **信风带 (Trade Winds)**。</p>
+</li>
+<li><p><strong>费雷尔环流 (Ferrel Cell)</strong> (30°-60°): 对应 **西风带 (Westerlies)**。</p>
+</li>
+<li><p><strong>极地环流 (Polar Cell)</strong> (60°-90°): 对应 <strong>极地东风带 (Polar Easterlies)</strong> 。</p>
+</li>
+</ul>
+<p><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031331023.png" alt="image.png" loading="lazy"></p>
+<p><strong>5. 季风 (Monsoon)</strong><br>随季节改变风向的风系。夏季陆地升温快形成低压，ITCZ（热带辐合带）北移，风从海洋吹向陆地（湿润）；冬季相反 。</p>
+<p><strong>6. 热带气旋 (Tropical Cyclone)</strong></p>
+<ul>
+<li><p><strong>触发</strong>: 温暖的海水（&gt;26°C）、低层大气扰动、较弱的垂直风切变。</p>
+</li>
+<li><p><strong>能量来源</strong>: 水汽凝结释放的 <strong>潜热 (Latent Heat)</strong> 是其巨大能量的来源 。<br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031341120.png" alt="image.png" loading="lazy"></p>
+</li>
+</ul>
+<h2 id="海洋环流"><a href="#海洋环流" class="headerlink" title="海洋环流"></a>海洋环流</h2><p><strong>1. 环流系统 (Gyre)</strong><br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031143348.png" alt="image.png" loading="lazy"></p>
+<ul>
+<li><p><strong>定义</strong>: 这种大型的、近圆形的表层洋流系统。</p>
+</li>
+<li><p><strong>五大环流</strong>: 北大西洋环流、南大西洋环流、北太平洋环流、南太平洋环流、印度洋环流。位于副热带高压区 。</p>
+</li>
+</ul>
+<p><strong>2. ENSO (厄尔尼诺-南方涛动)</strong></p>
+<ul>
+<li><strong>定义</strong>: 赤道太平洋海洋-大气系统的周期性波动。</li>
+<li><strong>发生机制</strong>: 正常年份信风将暖水堆积在西太平洋；El Niño时信风减弱，暖水回流至东太平洋，抑制秘鲁沿岸上升流。</li>
+<li><strong>气候影响</strong>: 导致全球气候异常，如南美洪水、澳洲干旱 。</li>
+</ul>
+<ol start="3">
+<li>垂直运动驱动力: 密度差异（由温度和盐度决定）驱动深层水垂直运动，即<strong>温盐环流 (Thermohaline Circulation)</strong> 。</li>
+<li>La Niña: 是El Niño的反相，信风异常增强，赤道东太平洋水温异常变冷。通常带来与El Niño相反的气候效应（如澳洲洪涝）。</li>
+<li>ENSO研究: 主要通过卫星监测（SST）、浮标阵列（如TAO&#x2F;TRITON）收集数据，使用数值模型预测。机构包括NOAA等 。</li>
+<li>温盐环流与输送带: 这是一个全球性的深海环流系统（Great Ocean Conveyor Belt）。北大西洋深层水 (NADW) 下沉，向南流动，在南大洋混合，进入印度洋和太平洋上升，最后通过表层流回北大西洋，完成循环 。</li>
+</ol>
+<h2 id="潮汐-Tides"><a href="#潮汐-Tides" class="headerlink" title="潮汐 (Tides)"></a>潮汐 (Tides)</h2><p><strong>1. 基本概念</strong>:<br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031401753.png" alt="image.png" loading="lazy"></p>
+<ul>
+<li><p><strong>Tide</strong>: 月球和太阳引力引起的周期性海面升降。</p>
+</li>
+<li><p><strong>High&#x2F;Low Tide</strong>: 满潮&#x2F;干潮。</p>
+</li>
+<li><p><strong>Tidal Range</strong>: 潮差。</p>
+</li>
+<li><p><strong>Spring Tide (大潮)</strong>: 朔望月（新月、满月）时，日地月一线，引力叠加，潮差最大。</p>
+</li>
+<li><p><strong>Neap Tide (小潮)</strong>: 上下弦月时，日月垂直，引力抵消，潮差最小 。</p>
+</li>
+</ul>
+<p><strong>2. 平衡潮理论</strong>:</p>
+<p>假设地球被均匀水层覆盖，不考虑陆地和摩擦。结论是地球表面会有两个潮汐隆起（bulges），分别指向月球和背向月球 。</p>
+<p><strong>3. 潮汐类型</strong>:</p>
+<ul>
+<li><p><strong>半日潮 (Semidiurnal)</strong>: 每日两高两低，潮高近似。</p>
+</li>
+<li><p><strong>全日潮 (Diurnal)</strong>: 每日一高一低。</p>
+</li>
+<li><p><strong>混合潮 (Mixed)</strong>: 每日两高两低，但潮高差异显著 。</p>
+</li>
+<li><p><strong>开阔大洋</strong>: 存在旋转潮波系统，绕着无潮点 (Amphidromic point) 旋转 。</p>
+</li>
+</ul>
+<h2 id="波浪-Waves"><a href="#波浪-Waves" class="headerlink" title="波浪 (Waves)"></a>波浪 (Waves)</h2><p><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031412985.png" alt="image.png" loading="lazy"></p>
+<ol>
+<li><p>结构<br>波峰 (Crest)、波谷 (Trough)、波高 (Height)、波长 (Wavelength)、周期 (Period)。水质点做圆形轨道运动，深度增加运动减弱 。</p>
+</li>
+<li><p>分类<br>按成因分（风浪、涌浪、地震海啸、潮波）；按复原力分（毛细波-表面张力；重力波-重力）。</p>
+</li>
+</ol>
+<p><strong>3. 深水与浅水波</strong>:</p>
+<ul>
+<li><strong>Deep-water</strong>: 水深 &gt; 1&#x2F;2 波长。相速度 $C &#x3D; L&#x2F;T \approx 1.56 T$。</li>
+<li><strong>Shallow-water</strong>: 水深 &lt; 1&#x2F;20 波长。相速度 $C &#x3D; \sqrt{gd}$（仅受水深控制）</li>
+</ul>
+<ol start="4">
+<li><p>过渡: 从深海进入浅海，波浪触底摩擦，波速减慢，波长变短，波高增加，最终破碎 。</p>
+</li>
+<li><p>海啸 (Tsunami): 由海底地震或滑坡引起。在开阔大洋波速极快（喷气机速度），波高低；进入浅海港湾（confining bay）时速度减慢但波高急剧堆积 。<br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031427969.png" alt="image.png" loading="lazy"></p>
+</li>
+</ol>
+<h2 id="🟢-Physical-Oceanography-English-Terminology-Explanation"><a href="#🟢-Physical-Oceanography-English-Terminology-Explanation" class="headerlink" title="🟢 Physical Oceanography: English Terminology &amp; Explanation"></a>🟢 Physical Oceanography: English Terminology &amp; Explanation</h2><table>
+<thead>
+<tr>
+<th>English Term</th>
+<th>Chinese</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Salinity</strong></td>
+<td>盐度</td>
+<td>The total amount of dissolved inorganic solids in water, usually expressed in ppt (‰).</td>
+</tr>
+<tr>
+<td><strong>Principle of Constant Proportions</strong></td>
+<td>恒比定律</td>
+<td>The ratio of major ions in seawater remains constant regardless of total salinity.</td>
+</tr>
+<tr>
+<td><strong>Thermocline</strong></td>
+<td>温跃层</td>
+<td>A layer of water where temperature changes rapidly with depth.</td>
+</tr>
+<tr>
+<td><strong>Pycnocline</strong></td>
+<td>密度跃层</td>
+<td>A layer of water where density changes rapidly with depth, acting as a barrier to mixing.</td>
+</tr>
+<tr>
+<td><strong>Coriolis Effect</strong></td>
+<td>科氏效应</td>
+<td>The apparent deflection of moving objects (like air&#x2F;water) due to Earth’s rotation (Right in N. Hemisphere).</td>
+</tr>
+<tr>
+<td><strong>Gyre</strong></td>
+<td>环流</td>
+<td>A large-scale system of rotating ocean currents, driven by global wind patterns.</td>
+</tr>
+<tr>
+<td><strong>Thermohaline Circulation</strong></td>
+<td>温盐环流</td>
+<td>Deep-ocean circulation driven by differences in water density (temperature &amp; salinity).</td>
+</tr>
+<tr>
+<td><strong>ENSO (El Niño-Southern Oscillation)</strong></td>
+<td>厄尔尼诺-南方涛动</td>
+<td>A periodic fluctuation in sea surface temperature and air pressure across the equatorial Pacific.</td>
+</tr>
+<tr>
+<td><strong>Latent Heat</strong></td>
+<td>潜热</td>
+<td>The heat energy absorbed or released during a phase change (e.g., water vapor condensing to rain fuels hurricanes).</td>
+</tr>
+<tr>
+<td><strong>Amphidromic Point</strong></td>
+<td>无潮点</td>
+<td>A point of zero amplitude in an ocean basin around which a tidal wave rotates.</td>
+</tr>
+<tr>
+<td><strong>Spring Tide</strong></td>
+<td>大潮</td>
+<td>Tides with the largest tidal range, occurring at new and full moons (Sun-Moon-Earth alignment).</td>
+</tr>
+<tr>
+<td><strong>Neap Tide</strong></td>
+<td>小潮</td>
+<td>Tides with the smallest tidal range, occurring at quarter moons (Sun-Moon at 90° angle).</td>
+</tr>
+<tr>
+<td><strong>Deep-water Wave</strong></td>
+<td>深水波</td>
+<td>A wave moving through water deeper than half its wavelength; speed depends on wavelength.</td>
+</tr>
+<tr>
+<td><strong>Shallow-water Wave</strong></td>
+<td>浅水波</td>
+<td>A wave moving through water shallower than 1&#x2F;20th its wavelength; speed depends on depth.</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="第二部分：海洋化学"><a href="#第二部分：海洋化学" class="headerlink" title="第二部分：海洋化学"></a>第二部分：海洋化学</h1><h2 id="河口-海洋界面"><a href="#河口-海洋界面" class="headerlink" title="河口-海洋界面"></a>河口-海洋界面</h2><p><strong>1. 界面过程</strong>:</p>
+<ul>
+<li><p><strong>化学过程</strong>: 絮凝作用（河水胶体遇盐水沉淀）、吸附与解吸（悬浮颗粒物表面离子交换）、氧化还原反应（沉积物缺氧环境）。</p>
+</li>
+<li><p><strong>影响因素</strong>: 盐度梯度、pH变化、溶解氧含量、海底地下水排泄 (SGD, Submarine Groundwater Discharge) 。SGD是连接陆地和海洋的重要通道，输送大量营养盐和碳到近海 。</p>
+</li>
+</ul>
+<h2 id="海洋演化与氧气"><a href="#海洋演化与氧气" class="headerlink" title="海洋演化与氧气"></a>海洋演化与氧气</h2><ol>
+<li>海水来源: 地球除气作用（火山喷发水汽）和外太空来源（彗星&#x2F;陨石撞击）。</li>
+<li>存留比与逗留时间: 元素在海水中总量与其输入&#x2F;输出速率之比。常量元素逗留时间长（保守元素），微量元素短 。</li>
+<li><strong>来源与去向</strong>: <ul>
+<li><strong>来源</strong>: 河流输入、大气沉降、海底热液、火山活动。</li>
+<li><strong>去向</strong>: 沉积物埋藏、海喷（飞沫）、热液循环移除 。</li>
+</ul>
+</li>
+<li>氧气的意义: 原始海洋无氧。光合生物（蓝细菌）出现释放 O2​，首先氧化海洋中的还原性物质（如二价铁，形成条带状铁建造），待氧化耗尽后，O2​ 逸出至大气，形成臭氧层，改变了海洋的氧化还原状态，使得现代海洋以氧化环境为主，深刻影响了元素的循环形态 。</li>
+</ol>
+<h2 id="常量元素"><a href="#常量元素" class="headerlink" title="常量元素"></a>常量元素</h2><ul>
+<li><strong>定义</strong>: 浓度 &gt; 1 mg&#x2F;kg，占盐分99.9%。</li>
+<li><strong>性质</strong>: 主要是保守性（Conservative），其浓度比值基本恒定，主要受物理过程（混合、蒸发）控制。主要包括 Cl−,Na+,SO42−​,Mg2+,Ca2+,K+ 。</li>
+</ul>
+<h2 id="微量元素"><a href="#微量元素" class="headerlink" title="微量元素"></a>微量元素</h2><ul>
+<li><p><strong>定义</strong>: 浓度 &lt; 1 mg&#x2F;kg。</p>
+</li>
+<li><p><strong>性质</strong>: 属于非保守性或营养盐型分布。受生物吸收、颗粒吸附（清除作用 Scavenging）控制。</p>
+</li>
+<li><p><strong>分布</strong>: 许多微量金属（如Fe, Zn）在表层被浮游植物耗尽，深层再生，呈现类似营养盐的垂直分布 。</p>
+</li>
+</ul>
+<h2 id="营养盐"><a href="#营养盐" class="headerlink" title="营养盐"></a>营养盐</h2><ul>
+<li><p><strong>定义</strong>: 海洋生物生长必需的元素（主要是N, P, Si）。</p>
+</li>
+<li><p><strong>来源</strong>: 陆源径流、大气沉降、深层水上涌。</p>
+</li>
+<li><p><strong>分布</strong>: 表层低（被消耗），深层高（再生）。</p>
+</li>
+<li><p><strong>赤潮</strong>: 富营养化导致藻类爆发性增殖，消耗氧气，产生毒素 。</p>
+</li>
+</ul>
+<h2 id="碳酸盐体系"><a href="#碳酸盐体系" class="headerlink" title="碳酸盐体系"></a>碳酸盐体系</h2><ul>
+<li><strong>平衡</strong>: CO2​+H2​O↔H2​CO3​↔H++HCO3−​↔2H++CO32−​。</li>
+<li><strong>作用</strong>: 调节海水pH（缓冲作用），控制碳酸钙（CaCO3​）的沉淀与溶解 。</li>
+</ul>
+<h2 id="地质-化学-生态关系"><a href="#地质-化学-生态关系" class="headerlink" title="地质-化学-生态关系"></a>地质-化学-生态关系</h2><ul>
+<li><strong>冷泉与水合物</strong>: 海底冷泉（Cold Seeps）流体富含甲烷，支持了化能合成生态系统（如菌席、蛤类），是独特的深海碳循环和生物多样性热点 。</li>
+</ul>
+<h1 id="第三部分：海洋生物"><a href="#第三部分：海洋生物" class="headerlink" title="第三部分：海洋生物"></a>第三部分：海洋生物</h1><h2 id="生命基础与适应性"><a href="#生命基础与适应性" class="headerlink" title="生命基础与适应性"></a>生命基础与适应性</h2><ol>
+<li>4大基础有机质 (Organic Building Blocks):</li>
+</ol>
+<ul>
+<li><p><strong>Carbohydrates (碳水化合物)</strong>: 能量储存（如淀粉），结构支撑（如几丁质、纤维素）。</p>
+</li>
+<li><p><strong>Lipids (脂类)</strong>: 能量储存，防水，浮力调节，细胞膜成分。</p>
+</li>
+<li><p><strong>Proteins (蛋白质)</strong>: 酶（催化代谢）、肌肉、激素、运输。</p>
+</li>
+<li><p><strong>Nucleic Acids (核酸)</strong>: 遗传信息存储与传递 (DNA, RNA)。</p>
+</li>
+</ul>
+<ol start="2">
+<li>渗透压调节 (Osmoregulation):</li>
+</ol>
+<ul>
+<li><strong>Osmoregulators (调渗者)</strong>: 维持体内盐度恒定，与环境不同。如硬骨鱼，在海水中会失水，需不断吞海水分泌盐分。</li>
+</ul>
+<ol start="2">
+<li>粘度适应 (Viscosity):</li>
+</ol>
+<ul>
+<li><p><strong>浮游生物</strong>: 需要增加阻力防止下沉。适应：体积小（表面积体积比大）、长出刺&#x2F;突起、产生油滴增加浮力。</p>
+</li>
+<li><p><strong>游泳生物 (Nekton)</strong>: 需要减少阻力以快速游动。适应：流线型身体。</p>
+</li>
+</ul>
+<ol start="4">
+<li>鲸鱼深潜适应:</li>
+</ol>
+<ul>
+<li><p><strong>氧气储存</strong>: 血液量大，红细胞多；肌肉中含有大量<strong>肌红蛋白 (Myoglobin)</strong> 储存氧气（比肺部存氧更重要）。</p>
+</li>
+<li><p><strong>生理调节</strong>: 潜水时心率减慢 (Bradycardia)，血液优先供应脑和心脏；肺部可塌陷以避免氮气溶解（减压病）。</p>
+</li>
+</ul>
+<h2 id="生态系统与交互"><a href="#生态系统与交互" class="headerlink" title="生态系统与交互"></a>生态系统与交互</h2><ol>
+<li>物种相互作用:</li>
+</ol>
+<ul>
+<li><p><strong>Competition (竞争)</strong>: 争夺资源（光、食、地）。</p>
+</li>
+<li><p><strong>Predation (捕食)</strong>: 吃与被吃。</p>
+</li>
+<li><p><strong>Symbiosis (共生)</strong>:</p>
+<ul>
+<li><p>Mutualism (互利共生): 如小丑鱼与海葵。</p>
+</li>
+<li><p>Commensalism (偏利共生): 一方获利一方无害。</p>
+</li>
+<li><p>Parasitism (寄生): 一方获利一方受害。</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><p>海洋碳汇: 海洋通过<strong>生物泵 (Biological Pump)<strong>（浮游植物固碳下沉）和</strong>溶解度泵</strong>（冷水溶解 CO2​ 下沉）吸收大量大气 CO2​，缓解全球变暖 。</p>
+</li>
+<li><p>生态概念:</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Ecological Niche (生态位)</strong>: 物种在环境中的角色和资源利用。Fundamental (基础): 理论最大范围；Realized (实际): 受竞争限制后的实际范围。</p>
+</li>
+<li><p><strong>Population</strong>: 同种个体的集合。</p>
+</li>
+<li><p><strong>Community</strong>: 不同种群的集合。</p>
+</li>
+</ul>
+<h2 id="初级生产力-Primary-Productivity"><a href="#初级生产力-Primary-Productivity" class="headerlink" title="初级生产力 (Primary Productivity)"></a>初级生产力 (Primary Productivity)</h2><ol>
+<li>影响因素: 光照 (Light) 和 营养盐 (Nutrients) 。</li>
+</ol>
+<ul>
+<li><p><strong>极地</strong>: 光照限制（冬季无光），夏季爆发。</p>
+</li>
+<li><p><strong>热带</strong>: 营养盐限制（层化严重，阻挡深层营养盐上涌），生产力常年低。</p>
+</li>
+<li><p><strong>温带</strong>: 季节性显著（春季藻华）。</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>沿岸高产原因: 陆源营养输入；潮汐混合和风引起的沿岸上升流打破温跃层，带来深层营养盐 。</p>
+</li>
+<li><p>HNLC (高营养盐低叶绿素海区): 南大洋和赤道太平洋，虽有N&#x2F;P，但缺乏微量元素 **铁 (Iron)**，限制了浮游植物生长 。</p>
+</li>
+</ol>
+<p><strong>4. NPP vs New Production</strong>:</p>
+<ul>
+<li><strong>Net Primary Production (NPP)</strong>: 总光合作用减去呼吸消耗。</li>
+<li><strong>New Production (新生产力)</strong>: 基于外界输入（如上升流、固氮）的营养盐支持的生产力，而非再生营养盐 。</li>
+</ul>
+<h2 id="潮间带-Intertidal-Zone"><a href="#潮间带-Intertidal-Zone" class="headerlink" title="潮间带 (Intertidal Zone)"></a>潮间带 (Intertidal Zone)</h2><ol>
+<li>岩石基质适应 (Rocky Shore Adaptations):</li>
+</ol>
+<ul>
+<li><strong>干燥 (Desiccation)</strong>: 关闭壳体（藤壶、贻贝）、躲在岩缝、分泌粘液、聚集生活。</li>
+<li><strong>波浪冲击 (Wave Shock)</strong>: 强力附着器（足丝、吸盘）、加厚壳体、低矮外形、柔韧性（海藻）。</li>
+<li><strong>温度&#x2F;盐度变化</strong>: 广温&#x2F;广盐性生理耐受。<br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031447911.png" alt="image.png" loading="lazy"></li>
+</ul>
+<h2 id="红树林-Mangroves"><a href="#红树林-Mangroves" class="headerlink" title="红树林 (Mangroves)"></a>红树林 (Mangroves)</h2><ol>
+<li>适应性:</li>
+</ol>
+<ul>
+<li><strong>盐分</strong>: 根部过滤盐分（Salt exclusion）、叶片分泌盐分（Salt excretion）。</li>
+<li><strong>缺氧土壤</strong>: 拥有露出水面的呼吸根 (Pneumatophores) 或支柱根 (Prop roots) 获取氧气。</li>
+<li><strong>繁殖</strong>: 胎生苗 (Vivipary)，种子在树上发芽后落下，快速扎根。<br><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031457232.png" alt="image.png" loading="lazy"></li>
+</ul>
+<h2 id="🟢-Marine-Biology-English-Terminology-Explanation"><a href="#🟢-Marine-Biology-English-Terminology-Explanation" class="headerlink" title="🟢 Marine Biology: English Terminology &amp; Explanation"></a>🟢 Marine Biology: English Terminology &amp; Explanation</h2><table>
+<thead>
+<tr>
+<th>English Term</th>
+<th>Chinese</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Osmoregulator</strong></td>
+<td>调渗生物</td>
+<td>An organism that actively controls its internal salt concentration independent of the environment (e.g., bony fish).</td>
+</tr>
+<tr>
+<td><strong>Viscosity</strong></td>
+<td>粘度</td>
+<td>The “thickness” of a fluid. Small plankton rely on it to float; nekton adapt with streamlined shapes to reduce drag.</td>
+</tr>
+<tr>
+<td><strong>Primary Productivity</strong></td>
+<td>初级生产力</td>
+<td>The rate at which photosynthetic organisms (producers) synthesize organic matter from inorganic compounds.</td>
+</tr>
+<tr>
+<td><strong>HNLC (High Nutrient, Low Chlorophyll)</strong></td>
+<td>高营养低叶绿素</td>
+<td>Ocean regions where major nutrients (N, P) are abundant, but phytoplankton growth is limited by trace metals like Iron.</td>
+</tr>
+<tr>
+<td><strong>Biological Pump</strong></td>
+<td>生物泵</td>
+<td>The process by which carbon is fixed by surface biology and transported to the deep ocean&#x2F;sediment.</td>
+</tr>
+<tr>
+<td><strong>Ecological Niche</strong></td>
+<td>生态位</td>
+<td>The role and position a species has in its environment; how it meets its needs for food and shelter, how it survives, and how it reproduces.</td>
+</tr>
+<tr>
+<td><strong>Symbiosis</strong></td>
+<td>共生</td>
+<td>A close and long-term biological interaction between two different biological organisms (e.g., Mutualism, Parasitism).</td>
+</tr>
+<tr>
+<td><strong>Intertidal Zone</strong></td>
+<td>潮间带</td>
+<td>The area that is above water at low tide and under water at high tide.</td>
+</tr>
+<tr>
+<td><strong>Desiccation</strong></td>
+<td>干燥&#x2F;失水</td>
+<td>The state of extreme dryness; a major stressor for intertidal organisms during low tide.</td>
+</tr>
+<tr>
+<td><strong>Pneumatophores</strong></td>
+<td>呼吸根</td>
+<td>Specialized roots in mangroves that grow upward out of the mud to obtain oxygen for the root system.</td>
+</tr>
+</tbody></table>
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>WALKERKILLER</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://walkerkiller.github.io/2025/01/16/Introduction-to-Oceanography-Notes/" title="海洋科学导论笔记">https://walkerkiller.github.io/2025/01/16/Introduction-to-Oceanography-Notes/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2025/11/03/hello-world/" rel="prev" title="Hello World"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">Hello World</span></a></div><div class="post-nav-item"></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2026 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> WALKERKILLER</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style></body></html>
