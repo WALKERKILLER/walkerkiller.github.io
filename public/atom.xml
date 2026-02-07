@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://walkerkiller.de5.net/</id>
+    <title>WALKERKILLER'S EDEN</title>
+    <updated>2026-02-06T13:33:06.795Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>WALKERKILLER</name>
+        <email>walkerkiller1202@gmail.com</email>
+        <uri>https://github.com/WALKERKILLER</uri>
+    </author>
+    <link rel="alternate" href="https://walkerkiller.de5.net/"/>
+    <link rel="self" href="https://walkerkiller.de5.net/atom.xml"/>
+    <logo>https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg</logo>
+    <icon>https://walkerkiller.de5.net/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2026 © WALKERKILLER</rights>
+    <entry>
+        <title type="html"><![CDATA[海洋科学导论笔记]]></title>
+        <id>https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</id>
+        <link href="https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes"/>
+        <updated>2026-01-15T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一部分：海洋物理</h1>
+<h2>海水性质与物理环境</h2>
+<p><strong>1. 盐度 (Salinity)</strong></p>
+<p>![image.png](<a href="https://picgo-1385161956.cos.ap-shan">https://picgo-1385161956.cos.ap-shan</a></p>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes" target="_blank">https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2026-01-15T16:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[概率论与数理统计知识点]]></title>
+        <id>https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</id>
+        <link href="https://walkerkiller.de5.net/posts/Probability-Statistics-Notes"/>
+        <updated>2026-01-08T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>随机变量及其分布</h2>
+<h3><strong>随机变量及其分布</strong></h3>
+<p><strong>分布函数：</strong> $def: F(x) = P(X \le x)$</p>
+<ul>
+<li><strong>性质：</strong> 非负性、单调性、规范性、连续</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Probability-Statistics-Notes" target="_blank">https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2026-01-08T16:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[俄语二外笔记]]></title>
+        <id>https://walkerkiller.de5.net/posts/Russian1-Note</id>
+        <link href="https://walkerkiller.de5.net/posts/Russian1-Note"/>
+        <updated>2025-12-27T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>俄语西里尔字母</h2>
+<ul>
+<li><strong>元音 (10个)</strong>:
+<ul>
+<li>А а (a)</li>
+<li>Е е (ye)</li>
+<li>Ё ё (yo)</li>
+<li>И и (i)</li>
+<li>О о (o)</li>
+</ul>
+</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Russian1-Note" target="_blank">https://walkerkiller.de5.net/posts/Russian1-Note</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2025-12-27T16:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[俄语二外语法]]></title>
+        <id>https://walkerkiller.de5.net/posts/Russian1-Grammar</id>
+        <link href="https://walkerkiller.de5.net/posts/Russian1-Grammar"/>
+        <updated>2025-12-23T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>西里尔字母</h2>
+<ul>
+<li><strong>元音 (10个)</strong>:
+<ul>
+<li>А а (a)</li>
+<li>Е е (ye)</li>
+<li>Ё ё (yo)</li>
+<li>И и (i)</li>
+<li>О о (o)</li>
+<li>У у (u)</li>
+</ul>
+</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Russian1-Grammar" target="_blank">https://walkerkiller.de5.net/posts/Russian1-Grammar</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2025-12-23T16:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【实用软件分享】MusicFree]]></title>
+        <id>https://walkerkiller.de5.net/posts/MusicFree</id>
+        <link href="https://walkerkiller.de5.net/posts/MusicFree"/>
+        <updated>2025-11-08T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>在逛linux.do的时候发现了一款支持多平台聚合的开源音乐播放器<a href="https://musicfree.catcat.work/">MusicFree</a>，类似于Mihon.app这类的漫画软件，通过</p>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/MusicFree" target="_blank">https://walkerkiller.de5.net/posts/MusicFree</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2025-11-08T16:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello World]]></title>
+        <id>https://walkerkiller.de5.net/posts/hello-world</id>
+        <link href="https://walkerkiller.de5.net/posts/hello-world"/>
+        <updated>2025-11-03T13:50:49.000Z</updated>
+        <content type="html"><![CDATA[<p>Don’t Say Hello to Me</p>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/hello-world" target="_blank">https://walkerkiller.de5.net/posts/hello-world</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2025-11-03T13:50:49.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://walkerkiller.de5.net/posts/hello-valaxy</id>
+        <link href="https://walkerkiller.de5.net/posts/hello-valaxy"/>
+        <updated>2022-04-01T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy</p>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/hello-valaxy" target="_blank">https://walkerkiller.de5.net/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WALKERKILLER</name>
+            <email>walkerkiller1202@gmail.com</email>
+            <uri>https://github.com/WALKERKILLER</uri>
+        </author>
+        <published>2022-04-01T00:00:00.000Z</published>
+    </entry>
+</feed>

@@ -31,6 +31,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     rss: {
       enable: true,
       fullText: false,
+      extractImagePathsFromHTML: true,
     },
   },
 
