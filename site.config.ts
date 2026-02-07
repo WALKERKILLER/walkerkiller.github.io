@@ -116,6 +116,18 @@ export default defineSiteConfig({
         color: '#00A3EE',
         icon: 'i-ri-alipay-line',
       },
+      {
+        name: '微信赞赏',
+        url: 'https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/img_v3_02um_ab8463de-fb4d-4c14-bb2e-f15a07aeb53g.jpg',
+        color: '#2DC100',
+        icon: 'i-ri-wechat-pay-line',
+      },
+      {
+        name: 'USDC(Arbitrum)',
+        url: 'https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/img_v3_02um_afdb2dec-9c82-4d34-99b5-c1e3a3efc6ag.jpg',
+        color: '#ffc965',
+        icon: 'i-ri-coin-line',
+      },
     ],
   },
 
