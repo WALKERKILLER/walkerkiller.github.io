@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>新月潮汐摄动流形</title>
+        <link>https://walkerkiller.de5.net/</link>
+        <description>Time to leave，My Eden is burning.</description>
+        <lastBuildDate>Sat, 07 Feb 2026 15:27:50 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>新月潮汐摄动流形</title>
+            <url>https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg</url>
+            <link>https://walkerkiller.de5.net/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © WALKERKILLER</copyright>
+        <atom:link href="https://walkerkiller.de5.net/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[海洋科学导论笔记]]></title>
+            <link>https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</link>
+            <guid isPermaLink="false">https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</guid>
+            <pubDate>Thu, 15 Jan 2026 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>第一部分：海洋物理</h1>
+<h2>海水性质与物理环境</h2>
+<p><strong>1. 盐度 (Salinity)</strong></p>
+<p><img src="https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031243774.png" alt="image.png"></p>
+<ul>
+<li><strong>定义</strong>: 海水中溶解的无机固体物质的总量。通常以千分比（ppt, ‰）表示，全球海洋平均盐度约为 35‰ 。</li>
+<li><strong>恒比定律确定盐度 (Principle of Constant Proportions)</strong>: 无论海水盐度如何变化，海水中主要溶解离子（如氯离子、钠离子等）之间的比例是恒定的。因此，只需测量一种主要离子（通常是氯离子, Chlorinity）的含量，就可以通过公式推算出总盐度：Salinity(‰)=1.80655×Chlorinity(‰) 。</li>
+<li><strong>实际观测</strong>: 现代海洋学主要通过测量海水的<strong>电导率 (Conductivity)</strong> 来推算盐度，因为溶解盐类是离子，导电性与离子浓度成正比。仪器通常同时测量温度和压力来校正 。</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes" target="_blank">https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</a> 阅读全文。</p>]]></content:encoded>
+            <author>walkerkiller1202@gmail.com (WALKERKILLER)</author>
+        </item>
+        <item>
+            <title><![CDATA[概率论与数理统计知识点]]></title>
+            <link>https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</link>
+            <guid isPermaLink="false">https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</guid>
+            <pubDate>Thu, 08 Jan 2026 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>随机变量及其分布</h2>
+<h3><strong>随机变量及其分布</strong></h3>
+<p><strong>分布函数：</strong> $def: F(x) = P(X \le x)$</p>
+<ul>
+<li><strong>性质：</strong> 非负性、单调性、规范性、连续性（右连续）</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Probability-Statistics-Notes" target="_blank">https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</a> 阅读全文。</p>]]></content:encoded>
+            <author>walkerkiller1202@gmail.com (WALKERKILLER)</author>
+        </item>
+        <item>
+            <title><![CDATA[俄语二外笔记]]></title>
+            <link>https://walkerkiller.de5.net/posts/Russian1-Note</link>
+            <guid isPermaLink="false">https://walkerkiller.de5.net/posts/Russian1-Note</guid>
+            <pubDate>Sat, 27 Dec 2025 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>俄语西里尔字母</h2>
+<ul>
+<li><strong>元音 (10个)</strong>:
+<ul>
+<li>А а (a)</li>
+<li>Е е (ye)</li>
+<li>Ё ё (yo)</li>
+<li>И и (i)</li>
+<li>О о (o)</li>
+</ul>
+</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Russian1-Note" target="_blank">https://walkerkiller.de5.net/posts/Russian1-Note</a> 阅读全文。</p>]]></content:encoded>
+            <author>walkerkiller1202@gmail.com (WALKERKILLER)</author>
+        </item>
+        <item>
+            <title><![CDATA[俄语二外语法]]></title>
+            <link>https://walkerkiller.de5.net/posts/Russian1-Grammar</link>
+            <guid isPermaLink="false">https://walkerkiller.de5.net/posts/Russian1-Grammar</guid>
+            <pubDate>Tue, 23 Dec 2025 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>西里尔字母</h2>
+<ul>
+<li><strong>元音 (10个)</strong>:
+<ul>
+<li>А а (a)</li>
+<li>Е е (ye)</li>
+<li>Ё ё (yo)</li>
+<li>И и (i)</li>
+<li>О о (o)</li>
+<li>У у (u)</li>
+</ul>
+</li>
+</ul>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/Russian1-Grammar" target="_blank">https://walkerkiller.de5.net/posts/Russian1-Grammar</a> 阅读全文。</p>]]></content:encoded>
+            <author>walkerkiller1202@gmail.com (WALKERKILLER)</author>
+        </item>
+        <item>
+            <title><![CDATA[【实用软件分享】MusicFree]]></title>
+            <link>https://walkerkiller.de5.net/posts/MusicFree</link>
+            <guid isPermaLink="false">https://walkerkiller.de5.net/posts/MusicFree</guid>
+            <pubDate>Sat, 08 Nov 2025 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>在逛linux.do的时候发现了一款支持多平台聚合的开源音乐播放器<a href="https://musicfree.catcat.work/">MusicFree</a>，类似于Mihon.app这类的漫画软件，通过添加⌈插件⌋的方式来实现多平台音乐播放，支持安卓和win双端使用。<br>
+下面是一些预览和基本配置项目。</p>
+<br/><p>访问 <a href="https://walkerkiller.de5.net/posts/MusicFree" target="_blank">https://walkerkiller.de5.net/posts/MusicFree</a> 阅读全文。</p>]]></content:encoded>
+            <author>walkerkiller1202@gmail.com (WALKERKILLER)</author>
+        </item>
+    </channel>
+</rss>

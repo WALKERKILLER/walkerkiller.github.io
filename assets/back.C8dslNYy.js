@@ -1,0 +1,1 @@
+import{a as o}from"./chunks/vue-router.vpQzZwvu.js";import"./chunks/vue-i18n.Cj_1mm8y.js";function c(){const r=o();function e(){document.referrer&&document.referrer!==location.href?r.back():r.push("/")}return{back:e}}export{c as u};

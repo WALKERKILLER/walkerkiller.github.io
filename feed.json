@@ -1,0 +1,74 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "新月潮汐摄动流形",
+    "home_page_url": "https://walkerkiller.de5.net/",
+    "feed_url": "https://walkerkiller.de5.net/feed.json",
+    "description": "Time to leave，My Eden is burning.",
+    "icon": "https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg",
+    "author": {
+        "name": "WALKERKILLER",
+        "url": "https://github.com/WALKERKILLER"
+    },
+    "items": [
+        {
+            "id": "https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes",
+            "content_html": "<h1>第一部分：海洋物理</h1>\n<h2>海水性质与物理环境</h2>\n<p><strong>1. 盐度 (Salinity)</strong></p>\n<p><img src=\"https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/20260116031243774.png\" alt=\"image.png\"></p>\n<ul>\n<li><strong>定义</strong>: 海水中溶解的无机固体物质的总量。通常以千分比（ppt, ‰）表示，全球海洋平均盐度约为 35‰ 。</li>\n<li><strong>恒比定律确定盐度 (Principle of Constant Proportions)</strong>: 无论海水盐度如何变化，海水中主要溶解离子（如氯离子、钠离子等）之间的比例是恒定的。因此，只需测量一种主要离子（通常是氯离子, Chlorinity）的含量，就可以通过公式推算出总盐度：Salinity(‰)=1.80655×Chlorinity(‰) 。</li>\n<li><strong>实际观测</strong>: 现代海洋学主要通过测量海水的<strong>电导率 (Conductivity)</strong> 来推算盐度，因为溶解盐类是离子，导电性与离子浓度成正比。仪器通常同时测量温度和压力来校正 。</li>\n</ul>\n<br/><p>访问 <a href=\"https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes\" target=\"_blank\">https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes</a> 阅读全文。</p>",
+            "url": "https://walkerkiller.de5.net/posts/Introduction-to-Oceanography-Notes",
+            "title": "海洋科学导论笔记",
+            "date_modified": "2026-01-15T16:00:00.000Z",
+            "date_published": "2026-01-15T16:00:00.000Z",
+            "author": {
+                "name": "WALKERKILLER",
+                "url": "https://github.com/WALKERKILLER"
+            }
+        },
+        {
+            "id": "https://walkerkiller.de5.net/posts/Probability-Statistics-Notes",
+            "content_html": "<h2>随机变量及其分布</h2>\n<h3><strong>随机变量及其分布</strong></h3>\n<p><strong>分布函数：</strong> $def: F(x) = P(X \\le x)$</p>\n<ul>\n<li><strong>性质：</strong> 非负性、单调性、规范性、连续性（右连续）</li>\n</ul>\n<br/><p>访问 <a href=\"https://walkerkiller.de5.net/posts/Probability-Statistics-Notes\" target=\"_blank\">https://walkerkiller.de5.net/posts/Probability-Statistics-Notes</a> 阅读全文。</p>",
+            "url": "https://walkerkiller.de5.net/posts/Probability-Statistics-Notes",
+            "title": "概率论与数理统计知识点",
+            "date_modified": "2026-01-08T16:00:00.000Z",
+            "date_published": "2026-01-08T16:00:00.000Z",
+            "author": {
+                "name": "WALKERKILLER",
+                "url": "https://github.com/WALKERKILLER"
+            }
+        },
+        {
+            "id": "https://walkerkiller.de5.net/posts/Russian1-Note",
+            "content_html": "<h2>俄语西里尔字母</h2>\n<ul>\n<li><strong>元音 (10个)</strong>:\n<ul>\n<li>А а (a)</li>\n<li>Е е (ye)</li>\n<li>Ё ё (yo)</li>\n<li>И и (i)</li>\n<li>О о (o)</li>\n</ul>\n</li>\n</ul>\n<br/><p>访问 <a href=\"https://walkerkiller.de5.net/posts/Russian1-Note\" target=\"_blank\">https://walkerkiller.de5.net/posts/Russian1-Note</a> 阅读全文。</p>",
+            "url": "https://walkerkiller.de5.net/posts/Russian1-Note",
+            "title": "俄语二外笔记",
+            "date_modified": "2025-12-27T16:00:00.000Z",
+            "date_published": "2025-12-27T16:00:00.000Z",
+            "author": {
+                "name": "WALKERKILLER",
+                "url": "https://github.com/WALKERKILLER"
+            }
+        },
+        {
+            "id": "https://walkerkiller.de5.net/posts/Russian1-Grammar",
+            "content_html": "<h2>西里尔字母</h2>\n<ul>\n<li><strong>元音 (10个)</strong>:\n<ul>\n<li>А а (a)</li>\n<li>Е е (ye)</li>\n<li>Ё ё (yo)</li>\n<li>И и (i)</li>\n<li>О о (o)</li>\n<li>У у (u)</li>\n</ul>\n</li>\n</ul>\n<br/><p>访问 <a href=\"https://walkerkiller.de5.net/posts/Russian1-Grammar\" target=\"_blank\">https://walkerkiller.de5.net/posts/Russian1-Grammar</a> 阅读全文。</p>",
+            "url": "https://walkerkiller.de5.net/posts/Russian1-Grammar",
+            "title": "俄语二外语法",
+            "date_modified": "2025-12-23T16:00:00.000Z",
+            "date_published": "2025-12-23T16:00:00.000Z",
+            "author": {
+                "name": "WALKERKILLER",
+                "url": "https://github.com/WALKERKILLER"
+            }
+        },
+        {
+            "id": "https://walkerkiller.de5.net/posts/MusicFree",
+            "content_html": "<p>在逛linux.do的时候发现了一款支持多平台聚合的开源音乐播放器<a href=\"https://musicfree.catcat.work/\">MusicFree</a>，类似于Mihon.app这类的漫画软件，通过添加⌈插件⌋的方式来实现多平台音乐播放，支持安卓和win双端使用。<br>\n下面是一些预览和基本配置项目。</p>\n<br/><p>访问 <a href=\"https://walkerkiller.de5.net/posts/MusicFree\" target=\"_blank\">https://walkerkiller.de5.net/posts/MusicFree</a> 阅读全文。</p>",
+            "url": "https://walkerkiller.de5.net/posts/MusicFree",
+            "title": "【实用软件分享】MusicFree",
+            "date_modified": "2025-11-08T16:00:00.000Z",
+            "date_published": "2025-11-08T16:00:00.000Z",
+            "author": {
+                "name": "WALKERKILLER",
+                "url": "https://github.com/WALKERKILLER"
+            }
+        }
+    ]
+}
