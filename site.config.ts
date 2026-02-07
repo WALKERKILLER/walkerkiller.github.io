@@ -98,12 +98,12 @@ export default defineSiteConfig({
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
-    {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
+    // {
+    //   name: 'RSS',
+    //   link: '/atom.xml',
+    //   icon: 'i-ri-rss-line',
+    //   color: 'orange',
+    // },
   ],
 
   sponsor: {
