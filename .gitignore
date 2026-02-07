@@ -23,10 +23,10 @@ components.d.ts
 public/valaxy-fuse-list.json
 
 # valaxy rss
-# public/feed.xml
+public/feed.xml
 
 # valaxy rss
-# public/atom.xml
+public/atom.xml
 
 # valaxy rss
 public/feed.json

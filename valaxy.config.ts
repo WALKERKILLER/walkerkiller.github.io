@@ -26,6 +26,9 @@ export default defineValaxyConfig<UserThemeConfig>({
   // site config see site.config.ts
 
   theme: 'yun',
+  build: {
+    ssgForPagination: true,
+  },
 
   modules: {
     rss: {
