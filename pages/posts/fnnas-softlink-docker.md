@@ -1,8 +1,8 @@
 ---
 title: 用软链接来转移飞牛OS的Docker存储
 katex: false
-date: 2026-2-10 0:00:00
-updated: 2026-2-10 0:00:00
+date: 2026-02-10 0:00:00
+updated: 2026-02-10 0:00:00
 tags:
   - Linux
 categories:
