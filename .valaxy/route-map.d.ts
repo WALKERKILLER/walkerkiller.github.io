@@ -96,6 +96,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/fnnas-softlink-docker': RouteRecordInfo<
+      '/posts/fnnas-softlink-docker',
+      '/posts/fnnas-softlink-docker',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/Introduction-to-Oceanography-Notes': RouteRecordInfo<
       '/posts/Introduction-to-Oceanography-Notes',
       '/posts/Introduction-to-Oceanography-Notes',
@@ -215,6 +222,12 @@ declare module 'vue-router/auto-routes' {
     'node_modules/.pnpm/valaxy-theme-yun@0.27.0_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
+      views:
+        | never
+    }
+    'pages/posts/fnnas-softlink-docker.md': {
+      routes:
+        | '/posts/fnnas-softlink-docker'
       views:
         | never
     }
