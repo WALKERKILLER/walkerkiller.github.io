@@ -5,7 +5,7 @@ export default defineSiteConfig({
   languages: ['zh-CN'],
   timezone: 'Asia/Shanghai',
 
-  url: 'https://walkerkiller.de5.net',
+  url: 'https://b.ryusel.com',
 
   title: "新月潮汐摄动流形",
   subtitle: '快逃，别回头，这里不是伊甸',
