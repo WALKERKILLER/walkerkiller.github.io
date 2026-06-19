@@ -62,7 +62,7 @@ export default defineSiteConfig({
        * @see https://www.fusejs.io/api/options.html#threshold
        * 设置匹配阈值，越低越精确
        */
-          threshold: 0.6,
+      threshold: 0.6,
       /**
        * @default false
        * @see https://www.fusejs.io/api/options.html#ignoreLocation
@@ -144,4 +144,21 @@ export default defineSiteConfig({
       },
     ],
   },
+  
+  llms: {
+    enable: true,
+    files: true,
+    fullText: true,
+    prompt: '',
+    // Default: only posts
+    // include: ['posts/**/*.md'],
+
+    // Include all markdown files under pages/
+    // include: ['**/*.md'],
+
+    // Include specific directories
+    // include: ['posts/**/*.md', 'guide/**/*.md'],
+  },
+
+  
 })
