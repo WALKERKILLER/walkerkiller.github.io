@@ -35,7 +35,7 @@ export default defineThemeConfig({
     since: 2025,
     icon:{
       animated: true,
-      url: 'https://walkerkiller.de5.net',
+      url: 'https://b.ryusel.com',
     },
     powered: true,
   },
