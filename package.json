@@ -13,9 +13,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.27.0",
+    "valaxy": "0.28.11",
     "valaxy-addon-components": "^0.1.0",
-    "valaxy-theme-yun": "0.27.0",
+    "valaxy-theme-yun": "0.28.11",
     "vite-plugin-pwa": "^1.2.0"
   },
   "devDependencies": {
