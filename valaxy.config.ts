@@ -1,8 +1,6 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
 import { addonComponents } from 'valaxy-addon-components'
-import { VitePWA } from 'vite-plugin-pwa'
-
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
@@ -39,15 +37,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
 
   vite: {
-    // https://vite-pwa-org.netlify.app/
-    plugins: [VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        // SSG 站点每个页面都有独立的 HTML，不需要 SPA 回退模式
-        navigateFallback: null,
-        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
-      },
-    })],
+    plugins: [],
   },
 
   unocss: { safelist },

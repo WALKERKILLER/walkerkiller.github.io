@@ -5,10 +5,8 @@ command = "pnpm run build"
 [build.environment]
 NODE_VERSION = "20"
 
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+# SSG 模式：Netlify 自动按 URL 路径匹配对应 HTML 文件
+# 不需要 SPA 回退规则，每个页面有独立的静态 HTML
 
 [[headers]]
 for = "/manifest.webmanifest"
