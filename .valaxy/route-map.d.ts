@@ -96,9 +96,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/fnnas-softlink-docker': RouteRecordInfo<
-      '/posts/fnnas-softlink-docker',
-      '/posts/fnnas-softlink-docker',
+    '/posts/Fnnas-Softlink-Docker': RouteRecordInfo<
+      '/posts/Fnnas-Softlink-Docker',
+      '/posts/Fnnas-Softlink-Docker',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -106,6 +106,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/Introduction-to-Oceanography-Notes': RouteRecordInfo<
       '/posts/Introduction-to-Oceanography-Notes',
       '/posts/Introduction-to-Oceanography-Notes',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/Look-Tongji-Notes': RouteRecordInfo<
+      '/posts/Look-Tongji-Notes',
+      '/posts/Look-Tongji-Notes',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -225,15 +232,21 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'pages/posts/fnnas-softlink-docker.md': {
+    'pages/posts/Fnnas-Softlink-Docker.md': {
       routes:
-        | '/posts/fnnas-softlink-docker'
+        | '/posts/Fnnas-Softlink-Docker'
       views:
         | never
     }
     'pages/posts/Introduction-to-Oceanography-Notes.md': {
       routes:
         | '/posts/Introduction-to-Oceanography-Notes'
+      views:
+        | never
+    }
+    'pages/posts/Look-Tongji-Notes.md': {
+      routes:
+        | '/posts/Look-Tongji-Notes'
       views:
         | never
     }
