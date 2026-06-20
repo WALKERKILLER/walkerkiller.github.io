@@ -44,7 +44,7 @@ categories:
 
 使用该Agent Skill，首先的前提条件是你要使用一个原生支持[Skills](https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/overview)[^2]协议的Coding Agent
 
-如Claude Code、Codex、Cursor、GitHub Copilot (VS Code)、Trae1、CodeBuddy、Pi、GA等，此处不再赘述部署方法，互联网上有大量相关教程和广告，可以自行挑选使用；
+如Claude Code、Codex、Cursor、GitHub Copilot (VS Code)、Trae、CodeBuddy、Pi、GA等，此处不再赘述部署方法，互联网上有大量相关教程和广告，可以自行挑选使用；
 
 ::: tip
 
