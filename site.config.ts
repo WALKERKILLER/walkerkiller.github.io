@@ -160,5 +160,10 @@ export default defineSiteConfig({
     // include: ['posts/**/*.md', 'guide/**/*.md'],
   },
 
+  vanillaLazyload: {
+    // 默认不开启
+    enable: true,
+  }
+
   
 })
