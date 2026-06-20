@@ -40,7 +40,14 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   vite: {
     // https://vite-pwa-org.netlify.app/
-    plugins: [VitePWA()],
+    plugins: [VitePWA({
+      registerType: 'autoUpdate',
+      workbox: {
+        // SSG 站点每个页面都有独立的 HTML，不需要 SPA 回退模式
+        navigateFallback: null,
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
+      },
+    })],
   },
 
   unocss: { safelist },
