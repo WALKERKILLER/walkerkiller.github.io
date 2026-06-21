@@ -8,6 +8,13 @@ NODE_VERSION = "20"
 # SSG 模式：Netlify 自动按 URL 路径匹配对应 HTML 文件
 # 不需要 SPA 回退规则，每个页面有独立的静态 HTML
 
+# GitHub Activity Graph 透明代理（解决 Vercel 国内无法访问）
+# 页面中引用 /github-activity-graph 即会通过 Netlify 边缘代理拉取
+[[redirects]]
+from = "/github-activity-graph"
+to = "https://github-readme-activity-graph.vercel.app/graph"
+status = 200
+
 [[headers]]
 for = "/*.html"
 [headers.values]

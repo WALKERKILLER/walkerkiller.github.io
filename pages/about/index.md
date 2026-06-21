@@ -23,4 +23,4 @@ nav: false
 
 - 🔍 Github Activity:
 
-![WALKERKILLER's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=WALKERKILLER)
+![WALKERKILLER's github activity graph](https://b.ryusel.com/github-activity-graph?username=WALKERKILLER)
