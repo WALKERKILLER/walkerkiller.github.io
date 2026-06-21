@@ -9,6 +9,11 @@ NODE_VERSION = "20"
 # 不需要 SPA 回退规则，每个页面有独立的静态 HTML
 
 [[headers]]
+for = "/*.html"
+[headers.values]
+Cache-Control = "no-cache"
+
+[[headers]]
 for = "/manifest.webmanifest"
 
 [headers.values]

@@ -4,6 +4,7 @@ import { addonComponents } from 'valaxy-addon-components'
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
+  'i-ri-advertisement-line',
 ]
 
 const colors = ['purple', 'green', 'blue', 'dark']
