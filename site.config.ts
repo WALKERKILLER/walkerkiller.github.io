@@ -9,13 +9,13 @@ export default defineSiteConfig({
 
   title: "新月潮汐摄动流形",
   subtitle: '快逃，别回头，这里不是伊甸',
-  description: 'Time to leave，My Eden is burning.',
+  description: 'Time to leave, My Eden is burning.',
 
   author: {
     name: 'WALKERKILLER',
     email: 'walkerkiller1202@gmail.com',
     link: 'https://github.com/WALKERKILLER',
-    avatar: 'https://picgo-1385161956.cos.ap-shanghai.myqcloud.com/imgs/komari.jpg',
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1285682334&spec=640&img_type=jpg',
     status: {
       emoji: '😭',
       message: '不想上学',
