@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"H:/Blog/valaxy-blog\\\" && git add -A && git status --short && FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch -r .omc/' --pru...",
-  "error": "Exit code 1\nD  .omc/sessions/de3873fa-f228-4312-8c2c-6b37c5924207.json\nD  .omc/state/agent-replay-de3873fa-f228-4312-8c2c-6b37c5924207.jsonl\nD  .omc/state/subagent-tracking.json\nCannot rewrite branches: Your index contains uncommitted changes.",
-  "timestamp": "2026-06-21T00:51:29.757Z",
-  "retry_count": 1
-}
