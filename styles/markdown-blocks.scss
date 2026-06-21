@@ -1,0 +1,58 @@
+// —— phycat-style corner badge on custom blocks ——
+// 直接移植 phycat 主题的 md-alert::after 行为
+
+.custom-block {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -12px;
+    font-size: 64px;
+    line-height: 1;
+    opacity: 0.15;
+    transform: rotate(-15deg);
+    pointer-events: none;
+    z-index: 0;
+    filter: grayscale(100%);
+    text-shadow: 0 0 10px currentColor;
+    transition:
+      transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+      opacity 0.4s ease,
+      right 0.4s ease,
+      bottom 0.4s ease,
+      filter 0.4s ease,
+      text-shadow 0.4s ease;
+  }
+
+  &:hover::after {
+    transform: rotate(0) scale(1.1);
+    opacity: 0.25;
+    right: 5px;
+    bottom: -2px;
+    filter: grayscale(0);
+    text-shadow: 0 0 25px currentColor;
+  }
+}
+
+.tip.custom-block::after {
+  content: '💡';
+  color: #4CAF50;
+}
+
+.info.custom-block::after {
+  content: '📝';
+  color: #1890FF;
+}
+
+.warning.custom-block::after {
+  content: '⚠️';
+  color: #FF9800;
+}
+
+.danger.custom-block::after {
+  content: '🔥';
+  color: #FF5252;
+}
