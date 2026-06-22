@@ -124,6 +124,27 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/Petrology-Example': RouteRecordInfo<
+      '/posts/Petrology-Example',
+      '/posts/Petrology-Example',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/Petrology-Organize': RouteRecordInfo<
+      '/posts/Petrology-Organize',
+      '/posts/Petrology-Organize',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/Petrology-Problem': RouteRecordInfo<
+      '/posts/Petrology-Problem',
+      '/posts/Petrology-Problem',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/Probability-Statistics-Notes': RouteRecordInfo<
       '/posts/Probability-Statistics-Notes',
       '/posts/Probability-Statistics-Notes',
@@ -253,6 +274,24 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/MusicFree.md': {
       routes:
         | '/posts/MusicFree'
+      views:
+        | never
+    }
+    'pages/posts/Petrology-Example.md': {
+      routes:
+        | '/posts/Petrology-Example'
+      views:
+        | never
+    }
+    'pages/posts/Petrology-Organize.md': {
+      routes:
+        | '/posts/Petrology-Organize'
+      views:
+        | never
+    }
+    'pages/posts/Petrology-Problem.md': {
+      routes:
+        | '/posts/Petrology-Problem'
       views:
         | never
     }
