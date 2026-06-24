@@ -117,6 +117,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/Marine-Engineering-Environment-Note': RouteRecordInfo<
+      '/posts/Marine-Engineering-Environment-Note',
+      '/posts/Marine-Engineering-Environment-Note',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/MusicFree': RouteRecordInfo<
       '/posts/MusicFree',
       '/posts/MusicFree',
@@ -268,6 +275,12 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Look-Tongji-Notes.md': {
       routes:
         | '/posts/Look-Tongji-Notes'
+      views:
+        | never
+    }
+    'pages/posts/Marine-Engineering-Environment-Note.md': {
+      routes:
+        | '/posts/Marine-Engineering-Environment-Note'
       views:
         | never
     }
