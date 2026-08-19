@@ -159,6 +159,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/Re-Is-the-Vat-Utopia-or-Dystopia': RouteRecordInfo<
+      '/posts/Re-Is-the-Vat-Utopia-or-Dystopia',
+      '/posts/Re-Is-the-Vat-Utopia-or-Dystopia',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/Russian1-Grammar': RouteRecordInfo<
       '/posts/Russian1-Grammar',
       '/posts/Russian1-Grammar',
@@ -311,6 +318,12 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Probability-Statistics-Notes.md': {
       routes:
         | '/posts/Probability-Statistics-Notes'
+      views:
+        | never
+    }
+    'pages/posts/Re-Is-the-Vat-Utopia-or-Dystopia.md': {
+      routes:
+        | '/posts/Re-Is-the-Vat-Utopia-or-Dystopia'
       views:
         | never
     }
