@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { normalizeRepositoryUrl } from '@valaxyjs/utils'
-import { useSiteConfig, useThemeConfig, useValaxyConfig, useValaxyI18n } from 'valaxy'
+import { useLayout, useSiteConfig, useThemeConfig, useValaxyConfig, useValaxyI18n } from 'valaxy'
 import pkg from 'valaxy/package.json' with { type: 'json' }
 import { useAddonVercount } from 'valaxy-addon-vercount'
 import { capitalize, computed, onMounted, ref } from 'vue'
@@ -13,6 +13,7 @@ const config = useValaxyConfig()
 const siteConfig = useSiteConfig()
 const themeConfig = useThemeConfig<UserThemeConfig>()
 const { page, site } = useAddonVercount()
+const isPostPage = useLayout('post')
 
 // Use current year for both SSR and client to avoid hydration mismatch.
 // SSG build year matches client year in the vast majority of cases.
@@ -102,8 +103,7 @@ const policeCode = computed(() => {
     </div>
 
     <div class="vercount-stats flex justify-center items-center flex-wrap gap-x-3 gap-y-1 text-sm op-80" aria-label="网站访问统计">
-      <span>本文阅读 {{ page.pv }} 次</span>
-      <span>本文访客 {{ page.uv }} 人</span>
+      <span v-if="isPostPage">本文阅读 {{ page.pv }} 次</span>
       <span>本站访问 {{ site.pv }} 次</span>
       <span>本站访客 {{ site.uv }} 人</span>
     </div>

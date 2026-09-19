@@ -1,0 +1,44 @@
+diff --git a/client/composable.ts b/client/composable.ts
+index c4ac3481868c3ddb55db5b1e407b064b91b0b621..5282f705e9b20209b429f45c17f51da0a591d0a4 100644
+--- a/client/composable.ts
++++ b/client/composable.ts
+@@ -25,11 +25,29 @@ export function useAddonVercount() {
+
+   const url = api === 'cn' ? cnUrl : api || defaultUrl
+
++  const getUvCookieKey = () => {
++    const host = window.location.host || 'unknown-host'
++    return `vercount_uv_${host.replace(/[^a-zA-Z0-9_-]/g, '_')}`
++  }
++
++  const hasVisited = () => {
++    const key = getUvCookieKey()
++    return document.cookie.split('; ').some(cookie => cookie.startsWith(`${key}=`))
++  }
++
++  const markVisited = () => {
++    document.cookie = `${getUvCookieKey()}=1; path=/; max-age=31536000; samesite=lax`
++  }
++
+   const fetchVisitorCount = (href: string) => {
++    const isNewUv = !hasVisited()
++    if (isNewUv)
++      markVisited()
++
+     fetch(url, {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json'},
+-      body: JSON.stringify({ url: href }),
++      body: JSON.stringify({ url: href, isNewUv }),
+     })
+       .then((response) => {
+         if (!response.ok)
+@@ -40,7 +58,7 @@ export function useAddonVercount() {
+       .then((response) => {
+         const data = response.data
+         page.value.pv = data.page_pv
+-        page.value.uv = data.page_uv
++        page.value.uv = data.page_uv ?? placeholder
+
+         site.value.pv = data.site_pv
+         site.value.uv = data.site_uv

@@ -2,3 +2,5 @@ allowBuilds:
   '@parcel/watcher': true
   esbuild: true
   vue-demi: true
+patchedDependencies:
+  valaxy-addon-vercount@0.0.7: patches/valaxy-addon-vercount@0.0.7.patch
