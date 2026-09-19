@@ -24,5 +24,5 @@ nav: false
 - 🔍 Github Activity:
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=WALKERKILLER&include_all_commits=true&theme=ambient_gradient" alt="GitHub Stats">
+  <img src="https://b.ryusel.com/github-stats?username=WALKERKILLER&include_all_commits=true&theme=ambient_gradient" alt="GitHub Stats">
 </div>
