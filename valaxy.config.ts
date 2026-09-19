@@ -6,6 +6,8 @@ import { addonVercount } from 'valaxy-addon-vercount'
 const safelist = [
   'i-ri-home-line',
   'i-ri-advertisement-line',
+  'i-ri-rss-line',
+  'i-ri-twitter-x-line',
 ]
 
 const colors = ['purple', 'green', 'blue', 'dark']

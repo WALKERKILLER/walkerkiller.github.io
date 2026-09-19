@@ -75,6 +75,12 @@ export default defineSiteConfig({
 
   social: [
     {
+      name: 'RSS',
+      link: '/atom.xml',
+      icon: 'i-ri-rss-line',
+      color: 'orange',
+    },
+    {
       name: 'GitHub',
       link: 'https://github.com/WALKERKILLER',
       icon: 'i-ri-github-line',
@@ -98,12 +104,12 @@ export default defineSiteConfig({
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
-    // {
-    //   name: 'RSS',
-    //   link: '/atom.xml',
-    //   icon: 'i-ri-rss-line',
-    //   color: 'orange',
-    // },
+    {
+      name: 'X',
+      link: 'https://x.com/noryusel',
+      icon: 'i-ri-twitter-x-line',
+      color: 'black',
+    },
   ],
 
   sponsor: {
