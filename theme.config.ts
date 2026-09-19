@@ -1,13 +1,24 @@
 import { defineThemeConfig } from 'valaxy-theme-yun'
 
 export default defineThemeConfig({
+  type: 'nimbo',
+
   banner: {
     enable: true,
-    title: ['新', '月', '潮', '汐', '摄', '动', '流', '形'],
+    title: '新月潮汐摄动流形',
     cloud: {
       enable: true,
     },
+    grid: {
+      enable: true,
+      fade: true,
+      interactive: true,
+    },
     siteNameClass: 'bg-gradient-to-r gradient-text from-#1e3c72 to-dark dark:from-#66a6ff dark:to-blue-500',
+  },
+
+  navbar: {
+    glass: 'always',
   },
 
   nav: [

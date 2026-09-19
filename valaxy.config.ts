@@ -71,7 +71,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
 
       custom: {
-        icon: 'i-ri:info-i',
+        icon: 'i-ri-information-line',
         text: 'CUSTOM',
       },
     },

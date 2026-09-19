@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "jsx": "preserve",
-    "lib": ["DOM", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -12,8 +12,7 @@
     "resolveJsonModule": true,
     "types": [
       "vite/client",
-      "valaxy/client",
-      "vite-plugin-vue-layouts/client"
+      "valaxy/client"
     ],
     "strict": true,
     "strictNullChecks": true,
