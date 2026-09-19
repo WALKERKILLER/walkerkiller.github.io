@@ -23,4 +23,6 @@ nav: false
 
 - 🔍 Github Activity:
 
-![WALKERKILLER's github activity graph](https://b.ryusel.com/github-activity-graph?username=WALKERKILLER)
+<div align="center">
+  <img src="https://github-stats-extended.vercel.app/api?username=WALKERKILLER&include_all_commits=true&theme=ambient_gradient" alt="GitHub Stats">
+</div>
