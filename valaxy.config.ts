@@ -1,6 +1,7 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
 import { addonComponents } from 'valaxy-addon-components'
+import { addonVercount } from 'valaxy-addon-vercount'
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
@@ -89,6 +90,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   addons: [
 
     addonComponents(),
+    addonVercount({ api: 'cn' }),
 
   ],
 
