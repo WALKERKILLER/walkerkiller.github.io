@@ -1,6 +1,5 @@
 ---
 title: 友情链接
-date: {{current year}}
 keywords: 链接
 description: 友情链接
 comments: true
